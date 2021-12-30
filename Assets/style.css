@@ -1,0 +1,10 @@
+.my-work {
+  background-image: url(/Assets/images/Asset\ 2-100.jpg);
+  height: 800px;
+  width: 100%;
+  background-size: cover;
+}
+
+.header {
+  color: blue;
+}
