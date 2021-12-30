@@ -3,6 +3,7 @@
 and links in fixed position in line to the right */
 
 .header {
+  display: inline-flex;
   color: rgb(27, 27, 70);
 }
 
@@ -14,10 +15,7 @@ and links in fixed position in line to the right */
 
 .header nav {
   font-size: 25px;
-  display: inline;
-  position: absolute;
-  padding-left: 100px;
-  float: right;
+  justify-content: flex-end;
 }
 
 .header a {
@@ -40,6 +38,23 @@ h2 {
 
 /* BEGIN STYLES TO ABOUT ME */
 .my-info h2 {
-  color: blue;
+  color: rgb(27, 27, 70);
+}
+p {
+  font-size: 20px;
+  font-family: monospace;
 }
 /* BEGIN STYLES TO FOOTER */
+
+footer {
+  display: inline-flex;
+  padding: 20px;
+  justify-content: center;
+  padding: 10%;
+}
+
+img {
+  height: 60px;
+  display: inline-block;
+  background-size: inherit;
+}
