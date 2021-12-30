@@ -1,10 +1,45 @@
+/* BEGIN STYLES TO HEADER */
+/* header box- want title centered 
+and links in fixed position in line to the right */
+
+.header {
+  color: rgb(27, 27, 70);
+}
+
+.header h1 {
+  font-size: 50px;
+  display: inline-block;
+  padding-left: 100px;
+}
+
+.header nav {
+  font-size: 25px;
+  display: inline;
+  position: absolute;
+  padding-left: 100px;
+  float: right;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+/* BEGIN STYLES TO PROJECTS */
+
 .my-work {
   background-image: url(/Assets/images/Asset\ 2-100.jpg);
-  height: 800px;
+  height: 200px;
   width: 100%;
   background-size: cover;
 }
 
-.header {
+h2 {
+  color: white;
+  font-size: 40px;
+}
+
+/* BEGIN STYLES TO ABOUT ME */
+.my-info h2 {
   color: blue;
 }
+/* BEGIN STYLES TO FOOTER */
