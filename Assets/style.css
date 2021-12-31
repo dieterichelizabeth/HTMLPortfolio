@@ -1,7 +1,3 @@
-/* BEGIN STYLES TO HEADER */
-/* header box- want title centered 
-and links in fixed position in line to the right */
-
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +6,7 @@ and links in fixed position in line to the right */
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+/* BEGIN STYLES TO HEADER */
 header {
   padding: 50px;
   display: flex;
@@ -54,8 +51,22 @@ header a {
 h2 {
   color: white;
   font-size: 40px;
+  text-shadow: 2px 2px 5px rgb(54, 52, 52);
 }
 
+.content {
+  padding: 10%;
+}
+
+.content img {
+  height: 300px;
+}
+
+article {
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(54, 52, 52);
+}
 /* BEGIN STYLES TO ABOUT ME */
 .my-info h2 {
   color: rgb(27, 27, 70);
