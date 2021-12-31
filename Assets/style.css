@@ -2,24 +2,42 @@
 /* header box- want title centered 
 and links in fixed position in line to the right */
 
-.header {
-  display: inline-flex;
-  color: rgb(27, 27, 70);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.header h1 {
+header {
+  padding: 50px;
+  display: flex;
+  color: rgb(27, 27, 70);
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+header h1 {
   font-size: 50px;
   display: inline-block;
   padding-left: 100px;
 }
 
-.header nav {
+header nav {
   font-size: 25px;
-  justify-content: flex-end;
 }
 
-.header a {
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+header a {
   text-decoration: none;
+  color: black;
+  margin: 0px 30px;
 }
 
 /* BEGIN STYLES TO PROJECTS */
