@@ -10,12 +10,22 @@
   --tertiary-color: #6b7d7d;
 }
 
+/* Utilities */
+.flex-row {
+  display: flex;
+}
+
+p {
+  font-size: 20px;
+}
+
 /* BEGIN STYLES TO HEADER */
 header {
   padding: 50px;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: var(--secondary-color);
 }
 
 header h1 {
@@ -51,6 +61,7 @@ header a {
   background-size: cover;
   margin: 0 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -72,6 +83,10 @@ article {
 /* BEGIN STYLES TO ABOUT ME */
 .about {
   display: flex;
+  justify-content: space-between;
+  padding: 30px 20px;
+  border-bottom: 10px;
+  width: 50%;
 }
 
 .about img {
@@ -81,12 +96,22 @@ article {
 }
 
 /* BEGIN STYLES TO CONTACT */
+.contact a {
+  font-size: 25px;
+  text-decoration: none;
+  color: black;
+}
 
 /* BEGIN STYLES TO FOOTER */
 footer {
   display: flex;
-  padding: 5%;
-  justify-content: space-between;
+  padding: 2%;
+  background-color: var(--secondary-color);
+}
+
+footer p {
+  color: black;
+  font-size: 35px;
 }
 
 footer img {
