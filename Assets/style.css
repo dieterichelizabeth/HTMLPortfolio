@@ -25,7 +25,6 @@ header {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  background-color: var(--secondary-color);
 }
 
 header h1 {
@@ -57,27 +56,41 @@ header a {
 /* BEGIN STYLES TO PROJECTS */
 
 .content {
-  background-color: var(--primary-color);
+  background-color: #d7dae5;
   background-size: cover;
-  margin: 0 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding: 20px;
 }
 
 h2 {
-  color: var(--primary-color);
+  color: var(--tertiary-color);
   font-size: 40px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  margin-left: 20px;
+  text-align: center;
 }
 
 .content img {
   height: 200px;
+  border-radius: 10%;
+}
+
+.content-box {
+  background-color: white;
+  height: 300px;
+  border-radius: 20%;
+}
+
+.spacing {
+  padding: 20px;
 }
 
 article {
   font-size: 20px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  text-align: center;
 }
 
 /* BEGIN STYLES TO ABOUT ME */
@@ -87,6 +100,8 @@ article {
   padding: 30px 20px;
   border-bottom: 10px;
   width: 50%;
+  margin: 25%;
+  background-color: red;
 }
 
 .about img {
@@ -100,6 +115,7 @@ article {
   font-size: 25px;
   text-decoration: none;
   color: black;
+  width: 50%;
 }
 
 /* BEGIN STYLES TO FOOTER */
