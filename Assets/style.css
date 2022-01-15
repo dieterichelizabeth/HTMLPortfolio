@@ -221,6 +221,14 @@ footer {
     height: 300px;
   }
 
+  .about {
+    display: block;
+  }
+
+  .about img {
+    margin: 10px 25%;
+  }
+
   .about h2 {
     font-size: 30px;
   }
@@ -253,6 +261,7 @@ footer {
     padding: 0px;
     margin: 10%;
     width: 80%;
+    display: block;
   }
 
   .about h2 {
@@ -260,6 +269,7 @@ footer {
   }
 
   .about img {
-    height: 100px;
+    height: 200px;
+    margin: 10px 25%;
   }
 }
