@@ -4,6 +4,8 @@ Challenge: 02: HTML and CSS
 
 This is a personal project to create a professional portfolio for future employers.
 
+Click to view the [deployed application](https://dieterichelizabeth.github.io/Portfolio/)
+
 The project is geared towards the perspective of a future hiring manager in that-
 
 ```
@@ -22,7 +24,9 @@ WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport"
 ```
 
-To complete this challenge, I created the HTML document and stylesheet to display the necessary information. Then created github issues to mark needed improvements to the code.
+To complete this challenge, I created the HTML document and stylesheet to display the necessary information, then created github issues to mark needed improvements to the code. The project adapts to screen sizes of 980px, 786px, and 575px.
+
+![Screen Shot of deployed project](https://user-images.githubusercontent.com/95142863/149607659-fb74a66b-4784-4525-b922-602cdb9fdd11.png)
 
 ## Used For
 
