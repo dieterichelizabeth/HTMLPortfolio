@@ -95,12 +95,12 @@ h2 {
 }
 
 .highlighted-content {
-  background-image: url(/Assets/images/Avacado-highlight.png);
+  background-image: url(./images/Avacado-highlight.png);
   background-size: cover;
 }
 
 .content {
-  background-image: url(/Assets/images/Avacado.png);
+  background-image: url(./images/Avacado.png);
   background-size: cover;
   border-radius: 10%;
 }
