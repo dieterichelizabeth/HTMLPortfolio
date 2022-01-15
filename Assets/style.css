@@ -55,15 +55,6 @@ header a {
 
 /* BEGIN STYLES TO PROJECTS */
 
-.content {
-  background-color: #6d9773;
-  background-size: cover;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 20px;
-}
-
 h2 {
   color: var(--tertiary-color);
   font-size: 40px;
@@ -73,15 +64,45 @@ h2 {
   text-align: center;
 }
 
+.highlighted-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 600px;
+  padding: 20px;
+  border-radius: 20%;
+  margin-bottom: 25px;
+  width: 100%;
+}
+
+.highlighted-content article {
+  width: 100%;
+  font-size: 25px;
+}
+
+.highlighted-content img {
+  height: 500px;
+  border-radius: 10%;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+}
+
 .content img {
   height: 200px;
   border-radius: 10%;
 }
 
 .content-box {
-  background-color: white;
+  background-color: var(--primary-color);
   height: 300px;
   border-radius: 20%;
+  margin-bottom: 25px;
 }
 
 .spacing {
