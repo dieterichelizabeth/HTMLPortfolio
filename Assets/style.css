@@ -2,12 +2,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
+  font-family: "Inconsolata", serif;
+}
+
+body {
+  background: rgb(213, 219, 224);
+  background: linear-gradient(
+    0deg,
+    rgba(213, 219, 224, 1) 0%,
+    rgba(67, 157, 191, 1) 61%
+  );
 }
 
 :root {
-  --primary-color: #8eaf9d;
-  --secondary-color: #0c3b3e;
-  --tertiary-color: #313638;
+  --white-text: #cfcfcf;
+  --white-bg-fill: rgba(250, 250, 250, 0.15);
 }
 
 /* Utilities */
@@ -31,8 +41,7 @@ header h1 {
   font-size: 50px;
   display: inline-block;
   padding-left: 100px;
-  color: var(--tertiary-color);
-  font-family: Georgia, "Times New Roman", Times, serif;
+  color: white;
 }
 
 header nav {
@@ -49,16 +58,13 @@ header nav ul {
 
 header a {
   text-decoration: none;
-  color: var(--tertiary-color);
   margin: 0px 30px;
 }
 
 /* BEGIN STYLES TO PROJECTS */
 
 h2 {
-  color: var(--tertiary-color);
   font-size: 40px;
-  font-family: Georgia, "Times New Roman", Times, serif;
   margin-left: 20px;
   margin-bottom: 20px;
   text-align: center;
@@ -69,11 +75,14 @@ h2 {
   flex-wrap: wrap;
   justify-content: center;
   height: 600px;
-  padding: 20px;
-  border-radius: 20%;
-  margin-bottom: 25px;
-  width: 100%;
-  background-color: var(--primary-color);
+  border-radius: 15px;
+  margin: 10%;
+  background-size: cover;
+  border: 1px solid var(--white-bg-fill);
+  background-color: var(--white-bg-fill);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  padding: 10px;
 }
 
 .highlighted-content article {
@@ -84,7 +93,6 @@ h2 {
 .highlighted-content img {
   height: 500px;
   border-radius: 10%;
-  align-items: center;
 }
 
 .content {
@@ -94,27 +102,24 @@ h2 {
   padding: 20px;
 }
 
-.highlighted-content {
-  background-image: url(./images/Avacado-highlight.png);
-  background-size: cover;
-}
-
 .content {
-  background-image: url(./images/Avacado.png);
+  /* background-color: white; */
   background-size: cover;
   border-radius: 10%;
 }
 
 .content img {
   height: 200px;
-  border-radius: 10%;
 }
 
 .content-box {
-  background-color: var(--primary-color);
   height: 300px;
-  border-radius: 20%;
+  border-radius: 15px;
   margin-bottom: 25px;
+  border: 1px solid var(--white-bg-fill);
+  background-color: var(--white-bg-fill);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .spacing {
@@ -123,7 +128,6 @@ h2 {
 
 article {
   font-size: 20px;
-  font-family: Georgia, "Times New Roman", Times, serif;
   text-align: center;
 }
 
