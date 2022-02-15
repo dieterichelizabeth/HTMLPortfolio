@@ -26,6 +26,11 @@ p {
   font-size: 20px;
 }
 
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
 /* BEGIN STYLES TO HEADER */
 header {
   width: 100%;
@@ -39,6 +44,7 @@ header h1 {
   width: 100%;
   font-size: 50px;
   margin-top: 20px;
+  margin-bottom: 20px;
   color: white;
 }
 
@@ -54,13 +60,6 @@ header nav ul {
 
 header a {
   text-decoration: none;
-}
-
-/* BEGIN STYLES TO PROJECTS */
-
-h2 {
-  font-size: 40px;
-  text-align: center;
 }
 
 /* BEGIN STYLES TO ABOUT ME */
@@ -84,128 +83,24 @@ h2 {
 
 /* BEGIN STYLES TO CONTACT */
 .contact {
+  width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  padding: 2%;
-  margin: 10px;
+  margin-bottom: 100px;
 }
 
 .contact h2 {
-  display: block;
-  padding: 7px 15px;
   width: 100%;
   margin-bottom: 15px;
-  align-items: center;
-  border-bottom: 2px solid var(--tertiary-color);
 }
 
 .contact a {
   text-decoration: none;
-  width: 50%;
 }
 
 .contact-links img {
-  height: 65px;
+  height: 60px;
   border-radius: 15%;
-  margin: 0px 15px;
-}
-
-/* BEGIN STYLES TO FOOTER */
-footer {
-  display: flex;
-  padding: 2%;
-  background-color: var(--secondary-color);
-}
-
-/* MEDIA QUERY FOR 980px */
-@media screen and (max-width: 980px) {
-  header h1 {
-    font-size: 45px;
-    justify-content: center;
-    padding: 5%;
-    width: 80%;
-  }
-
-  .highlighted-content article {
-    padding-top: 60px;
-    font-size: 30px;
-    color: var(--tertiary-color);
-  }
-
-  .highlighted-content img {
-    height: 400px;
-  }
-}
-
-/* MEDIA QUERY FOR 768px */
-@media screen and (max-width: 768px) {
-  header h1 {
-    font-size: 45px;
-    justify-content: center;
-    padding: 5%;
-    width: 80%;
-  }
-
-  .highlighted-content article {
-    padding-top: 80px;
-    font-size: 30px;
-    color: var(--tertiary-color);
-  }
-
-  .highlighted-content img {
-    height: 300px;
-  }
-
-  .about {
-    display: block;
-  }
-
-  .about img {
-    margin: 10px 25%;
-  }
-
-  .about h2 {
-    font-size: 30px;
-  }
-}
-
-/* MEDIA QUERY FOR 575px */
-@media screen and (max-width: 575px) {
-  header h1 {
-    font-size: 35px;
-    justify-content: center;
-    padding: 5%;
-    width: 80%;
-  }
-
-  h2 {
-    font-size: 35px;
-  }
-
-  .highlighted-content article {
-    padding-top: 80px;
-    font-size: 30px;
-    color: var(--tertiary-color);
-  }
-
-  .highlighted-content img {
-    height: 300px;
-  }
-
-  .about {
-    padding: 0px;
-    margin: 10%;
-    width: 80%;
-    display: block;
-  }
-
-  .about h2 {
-    font-size: 30px;
-  }
-
-  .about img {
-    height: 200px;
-    margin: 10px 25%;
-  }
+  margin: 0 15px;
 }
