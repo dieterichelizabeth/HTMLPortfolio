@@ -3,15 +3,15 @@ let frontEl = document.getElementById("front");
 document.getElementById("back").style.visibility = "hidden";
 
 // THIS WILL CLEAR THE FRONT SIDE OF THE CARD!!!
-testEl.addEventListener("mouseover", function(event){
+testEl.addEventListener("mouseover", function(){
     $("#front").hide();     
-    $("#back").show();  
+    document.getElementById("back").style.visibility = "visible"; 
 });
 
 // THIS WILL REVERT THE CARD!!!
-testEl.addEventListener("mouseleave", function( event ) {
+testEl.addEventListener("mouseleave", function() {
     $("#front").show();
-    $("#back").hide(); 
+    document.getElementById("back").style.visibility = "hidden";
 });
   
 
@@ -20,8 +20,9 @@ testEl.addEventListener("mouseleave", function( event ) {
 /*
 Done: Refactor navbar/title styling - should take 100% of spacing
 Done: - Same with recent projects
-Highlighted content is now one section
+Done: Highlighted content is now one section
 Done: - flex it 100%, figure out the spacing for the card
+Add github links/further card details
 - transition works with jquery: keep it simple!
 other projects (content) is now one section
 - flex it 100%, figure out the spacing
