@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="Assets/style.css" />
+    <link rel="stylesheet" href="./Assets/css/style.css" />
+    <link rel="stylesheet" href="./Assets/css/glassCard.css" />
     <title>Dieteriche Portfolio</title>
     <!-- Google Fonts -->
     <link
@@ -13,6 +14,7 @@
     />
   </head>
   <body>
+    <!-- Landingpage/hero -->
     <header>
       <nav>
         <ul>
@@ -31,41 +33,49 @@
     </header>
 
     <main>
-      <!-- brief introduction section -->
-      <section id="projects" class="project">
+      <!-- projects section -->
+      <section id="projects">
         <h2>Recent Projects</h2>
-        <!-- projects section -->
-        <div>
-          <div class="highlighted-content">
-            <!-- projects 1. property of UTA bootcamp? -->
-            <article>Pomodorian: A Pomodoro App</article>
-            <a
-              href="https://dieterichelizabeth.github.io/project-mixtape-pivot/"
-            >
-              <img src="./Assets/images/pomodorian.png"
-            /></a>
+
+        <div class="highlighted-content">
+          <div class="highlighted-card">
+            <div class="highlighted-front">
+              <!-- Highlighted/Featured Project -->
+              <article>Pomodorian: A Pomodoro App</article>
+              <a
+                href="https://dieterichelizabeth.github.io/project-mixtape-pivot/"
+              >
+                <img src="./Assets/images/pomodorian.png"
+              /></a>
+            </div>
+            <div class="highlighted-back">
+              <p>hello world</p>
+            </div>
           </div>
         </div>
+
+        <!-- Project cards -->
         <div class="content">
+          <!-- Project 1 -->
           <div class="content-box">
-            <div class="spacing">
-              <article>Timed Quiz: Quiz Wars</article>
-              <a href="https://dieterichelizabeth.github.io/quiz-wars/"
-                ><img src="./Assets/images/quizWars.png" alt=""
-              /></a>
-            </div>
+            <article>Timed Quiz: Quiz Wars</article>
+            <a href="https://dieterichelizabeth.github.io/quiz-wars/"
+              ><img src="./Assets/images/quizWars.png" alt=""
+            /></a>
           </div>
+
+          <!-- Project 2 -->
           <div class="content-box">
-            <div class="spacing">
-              <article>Password Generator</article>
-              <a
-                href="https://dieterichelizabeth.github.io/prompt-password-maker/"
-                ><img src="./Assets/images/passwordGenerator.png" alt=""
-              /></a>
-            </div>
+            <article>Password Generator</article>
+            <a
+              href="https://dieterichelizabeth.github.io/prompt-password-maker/"
+              ><img src="./Assets/images/passwordGenerator.png" alt=""
+            /></a>
           </div>
+
+          <!-- Project 3 -->
           <div class="content-box">
-            <div class="spacing">
+            <div class="front">
               <article>Coming Soon</article>
               <a href="none"
                 ><img
@@ -73,9 +83,14 @@
                   alt="Coming Soon placeholder"
               /></a>
             </div>
+            <div class="back">
+              <p>wow</p>
+              <img src="./Assets/images/Avacado-highlight.png" alt="" />
+            </div>
           </div>
         </div>
       </section>
+
       <!-- About me section -->
       <section id="about-me" class="about">
         <div>
@@ -98,6 +113,7 @@
           alt="a cartoon version of my profile photo"
         />
       </section>
+
       <!-- Contact section -->
       <section id="contact-me" class="contact">
         <h2>Contact</h2>
@@ -120,5 +136,3 @@
     <footer></footer>
   </body>
 </html>
-
-<!-- PENDING: Review for screen sizes. Hover effect- CSS.-->

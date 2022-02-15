@@ -6,6 +6,7 @@
   font-family: "Inconsolata", serif;
 }
 
+/* Background Gradient */
 body {
   background: rgb(213, 219, 224);
   background: linear-gradient(
@@ -15,14 +16,10 @@ body {
   );
 }
 
+/* Utilities */
 :root {
   --white-text: #cfcfcf;
   --white-bg-fill: rgba(250, 250, 250, 0.15);
-}
-
-/* Utilities */
-.flex-row {
-  display: flex;
 }
 
 p {
@@ -65,69 +62,6 @@ header a {
 
 h2 {
   font-size: 40px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-
-.highlighted-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  height: 600px;
-  border-radius: 15px;
-  margin: 10%;
-  background-size: cover;
-  border: 1px solid var(--white-bg-fill);
-  background-color: var(--white-bg-fill);
-  backdrop-filter: blur(5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-}
-
-.highlighted-content article {
-  width: 100%;
-  font-size: 25px;
-}
-
-.highlighted-content img {
-  height: 500px;
-  border-radius: 10%;
-}
-
-.content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  padding: 20px;
-}
-
-.content {
-  /* background-color: white; */
-  background-size: cover;
-  border-radius: 10%;
-}
-
-.content img {
-  height: 200px;
-}
-
-.content-box {
-  height: 300px;
-  border-radius: 15px;
-  margin-bottom: 25px;
-  border: 1px solid var(--white-bg-fill);
-  background-color: var(--white-bg-fill);
-  backdrop-filter: blur(5px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-}
-
-.spacing {
-  padding: 20px;
-}
-
-article {
-  font-size: 20px;
   text-align: center;
 }
 
