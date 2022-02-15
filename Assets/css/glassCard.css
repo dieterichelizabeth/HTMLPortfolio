@@ -1,80 +1,62 @@
-/* highlighted content glass card */
-.highlighted-content {
+/* STYLES TO HIGHLIGHTED CARD */
+.featured-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  width: 100%;
   height: 600px;
-  width: 80%;
-  margin: 10%;
-  padding: 10px;
-  perspective: 1000px;
-
+  margin-bottom: 100px;
+  margin-top: 50px;
   border: 1px solid black;
+  /* perspective: 1000px; */
 }
 
-.highlighted-card {
-  position: relative;
-  width: 100%;
-  height: 100%;
+.featured-card {
   text-align: center;
+  width: 80%;
+  margin-left: 10%;
   transition: 1s;
   transform-style: preserve-3d;
 
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   background-color: var(--white-bg-fill);
-  backdrop-filter: blur(5px);
   border: 1px solid var(--white-bg-fill);
+  backdrop-filter: blur(5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   border-radius: 15px;
 }
 
-.highlighted-content:hover .highlighted-card {
+.featured-card:hover {
   transform: rotateY(180deg);
 }
 
-.card.front::before {
-  content: "";
-  position: absolute;
+/* BEGIN STYLES TO CARD FRONT */
+/* CAN DEFINATELY REUSE SOME OF THESE FOR OTHER CARD STYLING */
+.featured-card-front {
+  padding: 10%;
+}
+
+.featured-card-front h3 {
   width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+  font-size: 40px;
+  /* 5 + 10 */
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 
-.card.front::after {
-  content: "";
-  position: absolute;
-  right: 1000px;
+.featured-card-front p {
   width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
+  margin-bottom: 10%;
 }
 
-.card.front .title {
-  position: absolute;
-  font-size: 30px;
-  width: 500px;
-  top: 50px;
-  left: 350px;
-  border: 1px solid black;
-}
-
-.card.front .description {
-  position: absolute;
-  top: 200px;
-}
-
-.card.front .languages {
-  position: absolute;
-  top: 400px;
-}
-
-.highlighted-content img {
-  height: 500px;
-  border-radius: 10%;
+.featured-card-front li {
+  font-size: 20px;
+  flex-wrap: wrap;
+  display: inline;
+  list-style: none;
+  margin: 0 15px;
 }
 
 /* BEGIN STYLES TO PROJECTS */
 /* Content cards */
-.content {
+/* .content {
   position: relative;
   display: flex;
   flex-wrap: wrap;
@@ -92,10 +74,10 @@
 article {
   font-size: 20px;
   text-align: center;
-}
+} */
 
 /* This container is needed to position the front and back side */
-.content-box {
+/* .content-box {
   height: 275px;
   border-radius: 15px;
   margin-bottom: 25px;
@@ -119,10 +101,10 @@ article {
 .front,
 .back {
   width: 30%;
-  height: 30%;
-  /* backface-visibility: hidden; */
-}
+  height: 30%; */
+/* backface-visibility: hidden; */
+/* }
 
 .back {
   transform: rotateY(180deg);
-}
+} */

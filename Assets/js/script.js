@@ -19,10 +19,9 @@ testEl.addEventListener("mouseleave", function( event ) {
 
 /*
 Done: Refactor navbar/title styling - should take 100% of spacing
-- Same with recent projects
-- figure out flexbox
+Done: - Same with recent projects
 Highlighted content is now one section
-- flex it 100%, figure out the spacing for the card
+Done: - flex it 100%, figure out the spacing for the card
 - transition works with jquery: keep it simple!
 other projects (content) is now one section
 - flex it 100%, figure out the spacing
@@ -30,5 +29,5 @@ other projects (content) is now one section
     - possibly use persentages instead of pixels
 Will need to revisit media queries
     - review needed changes before re-linking
-About me and down is fine.
+Done: About me and down is fine.
 */
