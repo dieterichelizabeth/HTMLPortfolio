@@ -1,14 +1,4 @@
 /* highlighted content glass card */
-.highlighted-content article {
-  width: 100%;
-  font-size: 25px;
-}
-
-.highlighted-content img {
-  height: 500px;
-  border-radius: 10%;
-}
-
 .highlighted-content {
   display: flex;
   flex-wrap: wrap;
@@ -17,8 +7,7 @@
   width: 80%;
   margin: 10%;
   padding: 10px;
-
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  perspective: 1000px;
 
   border: 1px solid black;
 }
@@ -28,27 +17,62 @@
   width: 100%;
   height: 100%;
   text-align: center;
-  transition: transform 1s;
+  transition: 1s;
   transform-style: preserve-3d;
-  border-radius: 15px;
 
-  border: 1px solid var(--white-bg-fill);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
   background-color: var(--white-bg-fill);
   backdrop-filter: blur(5px);
+  border: 1px solid var(--white-bg-fill);
+  border-radius: 15px;
 }
 
 .highlighted-content:hover .highlighted-card {
   transform: rotateY(180deg);
 }
 
-.highlighted-front,
-.highlighted-back {
+.card.front::before {
+  content: "";
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
 }
 
+.card.front::after {
+  content: "";
+  position: absolute;
+  right: 1000px;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.card.front .title {
+  position: absolute;
+  font-size: 30px;
+  width: 500px;
+  top: 50px;
+  left: 350px;
+  border: 1px solid black;
+}
+
+.card.front .description {
+  position: absolute;
+  top: 200px;
+}
+
+.card.front .languages {
+  position: absolute;
+  top: 400px;
+}
+
+.highlighted-content img {
+  height: 500px;
+  border-radius: 10%;
+}
+
+/* Content cards */
 .content {
   position: relative;
   display: flex;
@@ -60,7 +84,6 @@
   perspective: 1000px;
 }
 
-/* Content cards */
 .content img {
   height: 200px;
 }
