@@ -1,11 +1,15 @@
 let featuredEl = document.getElementById("card1");
-// let contentCardEl = document.getElementById("content-box");
+let contentCardEl = document.getElementById("content-box");
 let frontEl = document.getElementById("front");
 
 document.getElementById("back").style.visibility = "hidden";
+document.getElementById("back1").style.visibility = "hidden";
+document.getElementById("back2").style.visibility = "hidden";
+document.getElementById("back3").style.visibility = "hidden";
 
 // THIS WILL CLEAR THE FRONT SIDE OF THE CARD!!!
 featuredEl.addEventListener("mouseover", function(){
+    console.log("flipped!")
     $("#front").hide();     
     document.getElementById("back").style.visibility = "visible"; 
 });
@@ -16,6 +20,20 @@ featuredEl.addEventListener("mouseleave", function() {
     document.getElementById("back").style.visibility = "hidden";
 });
   
+
+
+// contentCardEl.addEventListener("mouseover", function() {
+//     console.log("flipped!")
+//     $("#front").hide();     
+//     document.getElementById("back").style.visibility = "visible";
+// })
+
+// contentCardEl.addEventListener("mouseleave", function() {
+//     $("#front").show();
+//     document.getElementById("back").style.visibility = "hidden";
+// });
+
+
 
 // GAME PLAN!!
 

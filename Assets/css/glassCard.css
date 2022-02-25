@@ -79,15 +79,6 @@
   border: 1px solid black;
 }
 
-.content img {
-  height: 200px;
-}
-
-article {
-  font-size: 20px;
-  text-align: center;
-}
-
 /* This container is needed to position the front and back side */
 .content-box {
   text-align: center;
