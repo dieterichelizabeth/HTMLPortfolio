@@ -26,8 +26,7 @@
   transform: rotateY(180deg);
 }
 
-/* BEGIN STYLES TO CARD FRONT */
-/* CAN DEFINATELY REUSE SOME OF THESE FOR OTHER CARD STYLING */
+/* Begin styles to card front */
 .featured-card-front {
   padding: 10%;
 }
@@ -35,8 +34,6 @@
 .featured-card-front h3 {
   width: 100%;
   font-size: 40px;
-  /* 5 + 10 */
-  margin-top: 5%;
   margin-bottom: 10%;
 }
 
@@ -53,7 +50,7 @@
   margin: 0 15px;
 }
 
-/* BEGIN STYLES TO CARD BACK */
+/* Beg styles to card back */
 .featured-card-back {
   /* flip the flipped image */
   transform: scale(-1, 1);
@@ -69,7 +66,7 @@
   height: 400px;
 }
 
-/* BEGIN STYLES TO PROJECTS */
+/* BEGIN STYLES TO PROJECT CONTENT CARDS */
 /* Content cards */
 .content {
   display: flex;
@@ -109,8 +106,7 @@ article {
   transform: rotateY(180deg);
 }
 
-/* BEGIN STYLES TO CARD FRONT */
-/* CAN DEFINATELY REUSE SOME OF THESE FOR OTHER CARD STYLING */
+/* Begin styles to content card front */
 .content-card-front {
   padding: 10%;
 }
@@ -118,8 +114,6 @@ article {
 .content-card-front h3 {
   width: 100%;
   font-size: 30px;
-  /* 5 + 10 */
-  margin-top: 5%;
   margin-bottom: 10%;
 }
 
@@ -133,8 +127,21 @@ article {
   flex-wrap: wrap;
   display: inline;
   list-style: none;
-  margin: 0 15px;
 }
-.back {
-  transform: rotateY(180deg);
+
+/* Begin styles to card back */
+.content-card-back {
+  /* flip the flipped image */
+  transform: scale(-1, 1);
+}
+
+.content-card-back h3 {
+  width: 100%;
+  font-size: 40px;
+  margin-bottom: 5%;
+}
+
+.content-card-back img {
+  height: 200px;
+  margin-bottom: 20px;
 }

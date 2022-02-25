@@ -1,15 +1,17 @@
-let testEl = document.getElementById("card1");
+let featuredEl = document.getElementById("card1");
+// let contentCardEl = document.getElementById("content-box");
 let frontEl = document.getElementById("front");
+
 document.getElementById("back").style.visibility = "hidden";
 
 // THIS WILL CLEAR THE FRONT SIDE OF THE CARD!!!
-testEl.addEventListener("mouseover", function(){
+featuredEl.addEventListener("mouseover", function(){
     $("#front").hide();     
     document.getElementById("back").style.visibility = "visible"; 
 });
 
 // THIS WILL REVERT THE CARD!!!
-testEl.addEventListener("mouseleave", function() {
+featuredEl.addEventListener("mouseleave", function() {
     $("#front").show();
     document.getElementById("back").style.visibility = "hidden";
 });
