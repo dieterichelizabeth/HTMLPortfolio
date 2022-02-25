@@ -1,5 +1,7 @@
-let featuredEl = document.getElementById("card1");
-let contentCardEl = document.getElementById("content-box");
+let featuredEl = document.getElementById("card");
+let card1El = document.getElementById("card1");
+let card2El = document.getElementById("card2");
+let card3El = document.getElementById("card3");
 let frontEl = document.getElementById("front");
 
 document.getElementById("back").style.visibility = "hidden";
@@ -20,6 +22,44 @@ featuredEl.addEventListener("mouseleave", function() {
     document.getElementById("back").style.visibility = "hidden";
 });
   
+// CARD 1
+card1El.addEventListener("mouseover", function(){
+    console.log("flipped!")
+    $("#front1").hide();     
+    document.getElementById("back1").style.visibility = "visible"; 
+});
+
+card1El.addEventListener("mouseleave", function() {
+    $("#front1").show();
+    document.getElementById("back1").style.visibility = "hidden";
+});
+
+// CARD 2
+card2El.addEventListener("mouseover", function(){
+    console.log("flipped!")
+    $("#front2").hide();     
+    document.getElementById("back2").style.visibility = "visible"; 
+});
+
+// THIS WILL REVERT THE CARD!!!
+card2El.addEventListener("mouseleave", function() {
+    $("#front2").show();
+    document.getElementById("back2").style.visibility = "hidden";
+});
+
+
+// CARD 3
+card3El.addEventListener("mouseover", function(){
+    console.log("flipped!")
+    $("#front3").hide();     
+    document.getElementById("back3").style.visibility = "visible"; 
+});
+
+// THIS WILL REVERT THE CARD!!!
+card3El.addEventListener("mouseleave", function() {
+    $("#front3").show();
+    document.getElementById("back3").style.visibility = "hidden";
+});
 
 
 
