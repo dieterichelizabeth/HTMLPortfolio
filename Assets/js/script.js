@@ -31,4 +31,5 @@ other projects (content) is now one section
 Will need to revisit media queries
     - review needed changes before re-linking
 Done: About me and down is fine.
+Add delay on javascript eventListener
 */
