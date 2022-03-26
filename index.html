@@ -12,6 +12,10 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Inconsolata"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Landingpage/hero -->
@@ -39,7 +43,7 @@
         </ul>
       </nav>
       <div class="relonoopener">
-        <p>Hi my name is</p>
+        <p>Hi, my name is</p>
         <h1>
           Elizabeth <br />
           Dieterich
@@ -48,10 +52,17 @@
       </div>
     </header>
 
+    <a href="mailto:dieterichelizabeth@gmail.com" class="sticky">
+      dieterichelizabeth@gmail.com
+    </a>
+
     <main>
       <!-- projects section -->
-      <section id="projects">
-        <h2>Recent Projects</h2>
+      <section>
+        <h2 class="featured">
+          Featured Project
+          <hr />
+        </h2>
 
         <!-- Featured Project -->
         <div class="featured-content">
@@ -87,8 +98,16 @@
             </div>
           </div>
         </div>
+      </section>
 
-        <!-- Project cards -->
+      <!-- Project cards -->
+      <section id="projects" class="projectList">
+        <h2>
+          <span style="font-size: 30px; color: #b1bbec">01.</span>
+          Projects
+          <hr />
+        </h2>
+
         <div class="content">
           <!-- Project 1 -->
           <div id="card1" class="content-box">
@@ -213,21 +232,10 @@
 
       <!-- Contact section -->
       <section id="contact-me" class="contact">
-        <h2>Contact</h2>
-        <div class="contact-links">
-          <!-- image icon is property of Gmail -->
-          <a href="mailto:dieterichelizabeth@gmail.com">
-            <img src="./Assets/images/Email.png" />
-          </a>
-          <!-- image icon is property of Github -->
-          <a href="https://github.com/dieterichelizabeth">
-            <img src="./Assets/images/github.png" />
-          </a>
-          <!-- image icon is property of Linkedin-->
-          <a href="https://www.linkedin.com/in/elizabeth-dieterich-067b55a8/">
-            <img src="./Assets/images/linkedin.png" />
-          </a>
-        </div>
+        <h2>
+          <span style="font-size: 30px; color: #b1bbec">03.</span>Contact
+          <hr />
+        </h2>
       </section>
     </main>
     <script src="./Assets/js/script.js"></script>
@@ -235,3 +243,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>
+
+<!-- <div class="contact-links">
+  <a href="mailto:dieterichelizabeth@gmail.com">
+    <img src="./Assets/images/Email.png" />
+  </a>
+
+  <a href="https://github.com/dieterichelizabeth">
+    <img src="./Assets/images/github.png" />
+  </a>
+
+  <a href="https://www.linkedin.com/in/elizabeth-dieterich-067b55a8/">
+    <img src="./Assets/images/linkedin.png" />
+  </a>
+</div> -->
