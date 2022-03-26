@@ -14,7 +14,6 @@ body {
   --white-bg-fill: rgba(250, 250, 250, 0.15);
   --primary-color: #0e0d45;
   --secondary-color: #b1bbec;
-  --tertiary-color: #39a6b2;
 }
 
 p {
@@ -23,7 +22,6 @@ p {
 
 h2 {
   font-size: 40px;
-  text-align: center;
 }
 
 /* BEGIN STYLES TO HEADER */
@@ -87,34 +85,50 @@ header a {
 /* BEGIN STYLES TO ABOUT ME */
 .about {
   display: flex;
-  justify-content: space-between;
-  padding: 30px 20px;
-  border-bottom: 10px;
-  margin: 10% 10%;
+  flex-wrap: wrap;
+  justify-content: right;
+  height: 100vh;
+}
+
+.about h2 {
+  margin-top: 50px;
+  margin-left: 60%;
+  width: 100%;
+}
+
+.about div {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  width: 80%;
+  margin-bottom: 10%;
 }
 
 .about p {
-  padding: 15px;
+  width: 50%;
+  margin-left: 40px;
+  font-size: 25px;
 }
 
 .about img {
-  height: 250px;
-  border-radius: 50%;
+  height: 300px;
   margin: 10px;
 }
 
 /* BEGIN STYLES TO CONTACT */
 .contact {
-  width: 100%;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  margin-bottom: 100px;
+  justify-content: space-around;
+  height: 100vh;
+  align-items: center;
+  border: 10px;
+  border-color: #000000;
+  border-style: solid;
 }
 
 .contact h2 {
   width: 100%;
-  margin-bottom: 15px;
 }
 
 .contact a {
