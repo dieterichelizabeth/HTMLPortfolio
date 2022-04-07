@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="./Assets/css/style.css" />
     <link rel="stylesheet" href="./Assets/css/glassCard.css" />
     <title>Dieteriche Portfolio</title>
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
     <!-- Google Fonts -->
     <link
       rel="stylesheet"
@@ -16,99 +21,185 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap"
       rel="stylesheet"
     />
+    <!-- Font Awesome! -->
+    <script
+      src="https://kit.fontawesome.com/1e188ab330.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
-  <body>
+  <body style="background-color: #18181a">
     <!-- Landingpage/hero -->
-    <header>
-      <nav>
-        <ul>
-          <li>
-            <a href="#projects">
-              <span style="color: #b1bbec">01.</span>Projects</a
-            >
-          </li>
-          <li>
-            <a href="#about-me">
-              <span style="color: #b1bbec">02.</span>About Me</a
-            >
-          </li>
-          <li>
-            <a href="#contact-me">
-              <span style="color: #b1bbec">03.</span>Contact</a
-            >
-          </li>
-          <li>
-            <a href="#resume" id="resume"> Resume</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="relonoopener">
-        <p>Hi, my name is</p>
-        <h1>
-          Elizabeth <br />
-          Dieterich
-        </h1>
-        <h2>FULL STACK DEVELOPER</h2>
+    <!-- Sidebar -->
+    <nav style="position: sticky; top: 10px; z-index: 7">
+      <div
+        class="w3-sidebar w3-bar-block"
+        style="display: none; background-color: #18181a"
+        id="mySidebar"
+      >
+        <button
+          onclick="w3_close()"
+          class="w3-bar-item w3-large"
+          style="background-color: #30304f; color: #f0eeeec1"
+        >
+          Close &times;
+        </button>
+        <a
+          href="#projects"
+          class="w3-bar-item w3-button"
+          style="color: #f0eeeec1"
+          ><i class="fa-solid fa-screwdriver-wrench"></i> Projects</a
+        >
+        <a
+          href="about-me"
+          class="w3-bar-item w3-button"
+          style="color: #f0eeeec1"
+        >
+          <i class="fa-solid fa-user"></i> About Me
+        </a>
+        <a
+          href="#contact-me"
+          class="w3-bar-item w3-button"
+          style="color: #f0eeeec1"
+          ><i class="fa-solid fa-address-card"></i> Contact</a
+        >
+        <br />
+        <a
+          href="mailto:dieterichelizabeth@gmail.com"
+          class="w3-bar-item w3-button"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: #f0eeeec1"
+        >
+          <i class="fa-solid fa-envelope"></i> Email
+        </a>
+        <a
+          href="https://github.com/dieterichelizabeth"
+          class="w3-bar-item w3-button"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: #f0eeeec1"
+        >
+          <i class="fa-brands fa-github"></i> Github
+        </a>
+        <a
+          href="https://www.linkedin.com/in/elizabeth-dieterich-067b55a8/"
+          class="w3-bar-item w3-button"
+          target="_blank"
+          rel="noopener noreferrer"
+          style="color: #f0eeeec1"
+        >
+          <i class="fa-brands fa-linkedin"></i> Linkedin
+        </a>
       </div>
-    </header>
+      <button class="w3-button w3-xlarge" onclick="w3_open()">
+        <i class="fa-solid fa-bars" style="color: #f0eeeec1"></i>
+      </button>
+    </nav>
 
-    <a href="mailto:dieterichelizabeth@gmail.com" class="sticky">
-      dieterichelizabeth@gmail.com
-    </a>
+    <section>
+      <div style="margin-top: 200px">
+        <div class="w3-container w3-center w3-animate-bottom">
+          <p>Hi, my name is</p>
+        </div>
+        <div class="w3-container w3-center w3-animate-right">
+          <h1
+            style="
+              color: #9898a3;
+              font-family: 'Roboto Mono', monospace;
+              font-size: 50px;
+            "
+          >
+            Elizabeth <br />
+            Dieterich
+          </h1>
+        </div>
+        <div class="w3-container w3-center w3-animate-left">
+          <hr
+            style="border-top: 1px solid #9898a3; width: 50%; margin-left: 25%"
+          />
+        </div>
+        <div class="w3-container w3-center w3-animate-top">
+          <h2>FULL STACK DEVELOPER</h2>
+        </div>
+      </div>
+    </section>
 
-    <main>
-      <!-- projects section -->
-      <section>
+    <!-- projects section -->
+    <!-- <section>
         <h2 class="featured">Featured Project</h2>
-        <hr style="width: 80%" />
+        <hr style="width: 80%" /> -->
 
-        <!-- Featured Project -->
-        <div class="featured-content">
-          <div id="card" class="featured-card">
-            <div id="front" class="featured-card-front">
-              <h3>Pomodorian - a Pomodoro App</h3>
-              <p>
-                A group project built for coding camp. The project uses two
-                server side api's to display multimedia in the form of
-                photos/inspirational quotes. The goal- to build upon the concept
-                of a pomodoro study app.
-              </p>
-              <ul>
-                <li>Built with:</li>
-                <li>Javascript</li>
-                <li>Node.js</li>
-                <li>Tailwind</li>
-              </ul>
-            </div>
-            <div id="back" class="featured-card-back">
-              <a
-                href="https://github.com/dieterichelizabeth/project-mixtape-pivot"
-                rel="noopener noreferrer"
-                target="_blank"
-                >Github Repo</a
-              >
-              <h3>Project-mixtape-pivot</h3>
-              <a
-                href="https://dieterichelizabeth.github.io/project-mixtape-pivot/"
-              >
-                <img src="./Assets/images/pomodorian.png"
-              /></a>
-            </div>
+    <!-- Featured Project -->
+    <section>
+      <h2>Featured Project</h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <h3>Pomodorian - a Pomodoro App</h3>
+          </div>
+          <div class="col-sm">
+            <p>
+              A group project built for coding camp. The project uses two server
+              side api's to display multimedia in the form of
+              photos/inspirational quotes. The goal- to build upon the concept
+              of a pomodoro study app.
+            </p>
+            <ul>
+              <li>Built with:</li>
+              <li>Javascript</li>
+              <li>Node.js</li>
+              <li>Tailwind</li>
+            </ul>
+          </div>
+          <div class="col-sm">
+            <a
+              href="https://github.com/dieterichelizabeth/project-mixtape-pivot"
+              rel="noopener noreferrer"
+              target="_blank"
+              >Github Repo</a
+            >
+            <h3>Project-mixtape-pivot</h3>
+            <a
+              href="https://dieterichelizabeth.github.io/project-mixtape-pivot/"
+            >
+              image
+            </a>
           </div>
         </div>
-      </section>
+      </div>
+      <div class="w3-container w3-center w3-animate-bottom">
+        <p style="color: white">Hi, my name is</p>
+      </div>
+    </section>
 
-      <!-- Project cards -->
-      <section id="projects" class="projectList">
+    <main></main>
+    <script src="./Assets/js/script.js"></script>
+    <script>
+      function w3_open() {
+        document.getElementById("mySidebar").style.display = "block";
+      }
+
+      function w3_close() {
+        document.getElementById("mySidebar").style.display = "none";
+      }
+    </script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+</html>
+
+<!-- Project cards -->
+<!-- <section id="projects" class="projectList">
         <h2>
           <span style="font-size: 30px; color: #b1bbec">01.</span>
           Projects
         </h2>
         <hr style="width: 80%" />
 
-        <div class="content">
-          <!-- Project 1 -->
-          <div id="card1" class="content-box">
+        <div class="content"> -->
+<!-- Project 1 -->
+<!-- <div id="card1" class="content-box">
             <div id="front1" class="content-card-front">
               <h3>Timed Quiz: Quiz Wars</h3>
               <p>
@@ -135,10 +226,10 @@
                 <img src="./Assets/images/quizWars.png"
               /></a>
             </div>
-          </div>
+          </div> -->
 
-          <!-- Project 2 -->
-          <div id="card2" class="content-box">
+<!-- Project 2 -->
+<!-- <div id="card2" class="content-box">
             <div id="front2" class="content-card-front">
               <h3>Password Generator</h3>
               <p>
@@ -169,10 +260,10 @@
                 <img src="./Assets/images/passwordGenerator.png"
               /></a>
             </div>
-          </div>
+          </div> -->
 
-          <!-- Project 3 -->
-          <div id="card3" class="content-box">
+<!-- Project 3 -->
+<!-- <div id="card3" class="content-box">
             <div id="front3" class="content-card-front">
               <h3>Workday Timetable</h3>
               <p>
@@ -204,15 +295,15 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
 
-      <!-- About me section -->
-      <section id="about-me" class="about">
+<!-- About me section -->
+<!-- <section id="about-me" class="about">
         <h2>
           <span style="font-size: 30px; color: #b1bbec">02.</span>About Me
-        </h2>
-        <hr style="width: 80%" />
-        <div>
+        </h2> -->
+<!-- <hr style="width: 80%" /> -->
+<!-- <div>
           <img src="./Assets/images/profile.png" alt="a smiling developer" />
 
           <p>
@@ -227,29 +318,54 @@
             communicate with the world around them.
           </p>
         </div>
-      </section>
+      </section> -->
 
-      <!-- Contact section -->
-      <section id="contact-me" class="contact">
+<!-- Contact section -->
+<!-- <section id="contact-me" class="contact_container">
         <h2><span style="font-size: 30px; color: #b1bbec">03.</span>Contact</h2>
         <hr style="width: 80%" />
-        <div class="contact-text">
+        <div class="contact_text">
           <h3>Reach Out</h3>
           <p>
             Thank you for taking the time to view my Portfolio! Please reach out
             of you have any questions, or would like to chat. My inbox is always
             open!
           </p>
-          <button class="email">Email</button>
+          <a href="mailto:dieterichelizabeth@gmail.com" class="contact_email">
+            Email
+          </a>
         </div>
-        <img src="./Assets/images/icons.png" alt="" />
-      </section>
-    </main>
-    <script src="./Assets/js/script.js"></script>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  </body>
-</html>
+        <div class="contact_icons_container">
+          <div class="contact_icons">
+            <i class="fa-brands fa-html5 fa-5x"></i>
+            <p>HTML</p>
+          </div>
+          <div class="contact_icons">
+            <i class="fa-brands fa-css3-alt fa-5x"></i>
+            <p>CSS</p>
+          </div>
+          <div class="contact_icons">
+            <i class="fa-brands fa-js-square fa-5x"></i>
+            <p>JavaScript</p>
+          </div>
+          <div class="contact_icons">
+            <i class="fa-brands fa-node fa-5x"></i>
+            <p>Node.js</p>
+          </div>
+          <div class="contact_icons">
+            <i class="fa-solid fa-database fa-5x"></i>
+            <p>Mysql</p>
+          </div>
+          <div class="contact_icons">
+            <i class="fa-solid fa-server fa-5x"></i>
+            <p>Express.js</p>
+          </div>
+          <div class="contact_icons">
+            <i class="fa-brands fa-react fa-5x"></i>
+            <p>React.js</p>
+          </div>
+        </div>
+      </section> -->
 
 <!-- <div class="contact-links">
   <a href="mailto:dieterichelizabeth@gmail.com">
