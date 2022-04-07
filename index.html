@@ -28,22 +28,22 @@
     ></script>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
-  <body style="background-color: #18181a">
-    <!-- Landingpage/hero -->
+  <body style="background-color: #23272a">
     <!-- Sidebar -->
-    <nav style="position: sticky; top: 10px; z-index: 7">
+    <nav>
       <div
-        class="w3-sidebar w3-bar-block"
-        style="display: none; background-color: #18181a"
+        class="w3-sidebar w3-bar-block nav_button"
+        style="display: none; background-color: #23272a"
         id="mySidebar"
       >
         <button
           onclick="w3_close()"
           class="w3-bar-item w3-large"
-          style="background-color: #30304f; color: #f0eeeec1"
+          style="background-color: #7289da; color: #23272a"
         >
           Close &times;
         </button>
+        <p>Navigation</p>
         <a
           href="#projects"
           class="w3-bar-item w3-button"
@@ -51,7 +51,7 @@
           ><i class="fa-solid fa-screwdriver-wrench"></i> Projects</a
         >
         <a
-          href="about-me"
+          href="#about-me"
           class="w3-bar-item w3-button"
           style="color: #f0eeeec1"
         >
@@ -64,6 +64,12 @@
           ><i class="fa-solid fa-address-card"></i> Contact</a
         >
         <br />
+        <p>Documents</p>
+        <a href="resume" class="w3-bar-item w3-button" style="color: #f0eeeec1">
+          Resume
+        </a>
+        <br />
+        <p>Contact</p>
         <a
           href="mailto:dieterichelizabeth@gmail.com"
           class="w3-bar-item w3-button"
@@ -97,27 +103,20 @@
       </button>
     </nav>
 
+    <!-- Welcome text -->
     <section>
-      <div style="margin-top: 200px">
+      <div class="welcome">
         <div class="w3-container w3-center w3-animate-bottom">
           <p>Hi, my name is</p>
         </div>
         <div class="w3-container w3-center w3-animate-right">
-          <h1
-            style="
-              color: #9898a3;
-              font-family: 'Roboto Mono', monospace;
-              font-size: 50px;
-            "
-          >
+          <h1>
             Elizabeth <br />
             Dieterich
           </h1>
         </div>
         <div class="w3-container w3-center w3-animate-left">
-          <hr
-            style="border-top: 1px solid #9898a3; width: 50%; margin-left: 25%"
-          />
+          <hr />
         </div>
         <div class="w3-container w3-center w3-animate-top">
           <h2>FULL STACK DEVELOPER</h2>
@@ -125,55 +124,253 @@
       </div>
     </section>
 
-    <!-- projects section -->
-    <!-- <section>
-        <h2 class="featured">Featured Project</h2>
-        <hr style="width: 80%" /> -->
+    <main>
+      <!-- Featured Project -->
+      <section>
+        <div class="container">
+          <div
+            class="row"
+            style="
+              background-color: #f3f3f334;
+              border: 1px solid #595959;
+              border-radius: 10px;
+            "
+          >
+            <h2 class="col-12" style="text-align: center">Featured Project</h2>
+            <h3 class="col-12">Pomodorian - a Pomodoro App</h3>
+            <div class="col-sm">
+              <p>
+                A group project built for coding camp. The project uses two
+                server side api's to display multimedia in the form of
+                photos/inspirational quotes. The goal- to build upon the concept
+                of a pomodoro study app.
+              </p>
+            </div>
+            <div class="col-sm">
+              <a
+                href="https://dieterichelizabeth.github.io/project-mixtape-pivot/"
+              >
+                <img src="./Assets/images/pomodorian.png" style="width: 100%" />
+              </a>
+            </div>
+            <div class="col-sm">
+              <a
+                href="https://github.com/dieterichelizabeth/project-mixtape-pivot"
+                rel="noopener noreferrer"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i> Github Repo</a
+              >
+              <h3>Project-mixtape-pivot</h3>
+              <ul>
+                <li>Built with:</li>
+                <li>Javascript</li>
+                <li>Node.js</li>
+                <li>Tailwind</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Featured Project -->
-    <section>
-      <h2>Featured Project</h2>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm">
-            <h3>Pomodorian - a Pomodoro App</h3>
+      <!-- Project cards -->
+      <section id="projects">
+        <h2 class="project_head">Projects</h2>
+        <hr style="width: 50%; margin-left: 25%" />
+        <div class="container">
+          <div class="row d-flex justify-content-around">
+            <!-- Project 1 -->
+            <div class="col-lg-4 col-md-12 project_card">
+              <div class="col-12 d-flex mt-4">
+                <h3 class="col-10">My Employee SQL: An Employee Tracker</h3>
+                <a
+                  href="https://github.com/dieterichelizabeth/my-employee-sql"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="col-2 project_icon"
+                  ><i class="fa-brands fa-github fa-3x"></i
+                ></a>
+              </div>
+              <p class="project_description">
+                My Employee SQL is a command line application which allows the
+                user to update a database of employees
+              </p>
+
+              <div class="project_tools_container">
+                <div class="col-12 d-flex justify-content-between">
+                  <p class="col-4 project_tools">MySQL</p>
+                  <p class="col-4 project_tools">Inquirer</p>
+                  <p class="col-4 project_tools">JavaScript</p>
+                </div>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="col-lg-4 col-md-12 project_card">
+              <div class="col-12 d-flex mt-4">
+                <h3 class="col-10">
+                  Trading Post- Object Relational Mapping (ORM): E-commerce Back
+                  End
+                </h3>
+                <a
+                  href="https://github.com/dieterichelizabeth/trading-post"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="col-2 project_icon"
+                  ><i class="fa-brands fa-github fa-3x"></i
+                ></a>
+              </div>
+              <p class="project_description">
+                This project builds the back end for an e-commerce site- take a
+                working Express.js API and configuring it to use Sequelize to
+                interact with a MySQL database.
+              </p>
+
+              <div class="project_tools_container">
+                <div class="col-12 d-flex justify-content-between">
+                  <p class="col-4 project_tools">Express.js</p>
+                  <p class="col-4 project_tools">Sequelize</p>
+                  <p class="col-4 project_tools">JavaScript</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-lg-4 col-md-12 project_card">
+              <div class="col-12 d-flex mt-4">
+                <h3 class="col-10">Weathering With Api's: Weather Dashboard</h3>
+                <a
+                  href="https://github.com/dieterichelizabeth/weathering-with-apis"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="col-2 project_icon"
+                  ><i class="fa-brands fa-github fa-3x"></i
+                ></a>
+              </div>
+              <p class="project_description">
+                This project is a weather dashboard which pulls weather
+                information from a third party api to display dynamically to the
+                user.
+              </p>
+
+              <div class="project_tools_container">
+                <div class="col-12 d-flex justify-content-between">
+                  <p class="col-4 project_tools">HTML</p>
+                  <p class="col-4 project_tools">CSS</p>
+                  <p class="col-4 project_tools">JavaScript</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-sm">
-            <p>
-              A group project built for coding camp. The project uses two server
-              side api's to display multimedia in the form of
-              photos/inspirational quotes. The goal- to build upon the concept
-              of a pomodoro study app.
+
+          <!-- More Projects Dropdown -->
+          <div class="w3-container col-12">
+            <div
+              class="w3-dropdown-hover col-12"
+              style="
+                color: white;
+                background-color: transparent;
+                margin-top: 20px;
+              "
+            >
+              More Projects
+              <div
+                class="w3-dropdown-content w3-card-4 col-12"
+                style="background-color: transparent"
+              >
+                <div class="w3-container">
+                  <div style="color: white">
+                    <p>
+                      <a
+                        href="https://github.com/dieterichelizabeth/quiz-wars"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Quiz Wars</a
+                      >
+                      : a Javascript timed quiz
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About me section -->
+      <section id="about-me" class="about">
+        <div class="container">
+          <h2>About me</h2>
+          <hr style="width: 50%; margin-left: 25%" />
+          <div class="row d-flex justify-content-between">
+            <img
+              src="./Assets/images/profile.png"
+              alt="A smiling developer with brown hair and a grey sweather."
+              class="col-lg-4 col-md-12"
+              style="width: 100%; border-radius: 50px"
+            />
+            <p class="col-lg-8 col-md-12">
+              <span style="color: #6fa8dc">Hello, my name is Liz. </span
+              >Previously, I studied Anthropology of linguistics and enjoyed
+              learning about communication between peoples 👥. Now, I
+              communicate with computers👩🏻‍💻. I love games like sudoku and using
+              rules/logic to solve problems. <br />
+              <br />
+              I’m currently studying full stack development at UT Austin
+              bootcamp! ✨ I’m excited to grow and continue to learn the many
+              ways people communicate with the world around them.
             </p>
-            <ul>
-              <li>Built with:</li>
-              <li>Javascript</li>
-              <li>Node.js</li>
-              <li>Tailwind</li>
-            </ul>
           </div>
-          <div class="col-sm">
+        </div>
+      </section>
+
+      <!-- Contact section -->
+      <section id="contact-me" class="container">
+        <h2>Contact</h2>
+        <hr style="width: 50%; margin-left: 25%" />
+        <div class="row d-flex justify-content-center">
+          <h3 class="col-4">Reach Out</h3>
+          <div class="col-8">
+            <p class="col-12">
+              Thank you for taking the time to view my Portfolio! Please reach
+              out of you have any questions, or would like to chat. My inbox is
+              always open!
+            </p>
             <a
-              href="https://github.com/dieterichelizabeth/project-mixtape-pivot"
-              rel="noopener noreferrer"
-              target="_blank"
-              >Github Repo</a
+              href="mailto:dieterichelizabeth@gmail.com"
+              class="btn btn-dark col-6"
             >
-            <h3>Project-mixtape-pivot</h3>
-            <a
-              href="https://dieterichelizabeth.github.io/project-mixtape-pivot/"
-            >
-              image
+              Email
             </a>
           </div>
         </div>
-      </div>
-      <div class="w3-container w3-center w3-animate-bottom">
-        <p style="color: white">Hi, my name is</p>
-      </div>
-    </section>
-
-    <main></main>
+        <div
+          class="row d-flex justify-content-around col-12"
+          style="margin-top: 50px"
+        >
+          <div class="contact_icons col-1">
+            <i class="fa-brands fa-html5 fa-2x"></i>
+          </div>
+          <div class="contact_icons col-1">
+            <i class="fa-brands fa-css3-alt fa-2x"></i>
+          </div>
+          <div class="contact_icons col-1">
+            <i class="fa-brands fa-js-square fa-2x"></i>
+          </div>
+          <div class="contact_icons col-1">
+            <i class="fa-brands fa-node fa-2x"></i>
+          </div>
+          <div class="contact_icons col-1">
+            <i class="fa-solid fa-database fa-2x"></i>
+          </div>
+          <div class="contact_icons col-1">
+            <i class="fa-solid fa-server fa-2x"></i>
+          </div>
+          <div class="contact_icons col-1">
+            <i class="fa-brands fa-react fa-2x"></i>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer style="color: white">Made with love</footer>
     <script src="./Assets/js/script.js"></script>
     <script>
       function w3_open() {
@@ -184,199 +381,5 @@
         document.getElementById("mySidebar").style.display = "none";
       }
     </script>
-    <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </body>
 </html>
-
-<!-- Project cards -->
-<!-- <section id="projects" class="projectList">
-        <h2>
-          <span style="font-size: 30px; color: #b1bbec">01.</span>
-          Projects
-        </h2>
-        <hr style="width: 80%" />
-
-        <div class="content"> -->
-<!-- Project 1 -->
-<!-- <div id="card1" class="content-box">
-            <div id="front1" class="content-card-front">
-              <h3>Timed Quiz: Quiz Wars</h3>
-              <p>
-                A timed coding quiz with multiple-choice questions. This app
-                will run in the browser and feature dynamically updated HTML and
-                CSS powered by JavaScript.
-              </p>
-              <ul>
-                <li>Built with:</li>
-                <li>HTML</li>
-                <li>Bootstrap</li>
-                <li>Javascript</li>
-              </ul>
-            </div>
-            <div id="back1" class="content-card-back">
-              <a
-                href="https://github.com/dieterichelizabeth/quiz-wars"
-                rel="noopener noreferrer"
-                target="_blank"
-                >Github Repo</a
-              >
-              <h3>quiz-wars!</h3>
-              <a href="https://dieterichelizabeth.github.io/quiz-wars/">
-                <img src="./Assets/images/quizWars.png"
-              /></a>
-            </div>
-          </div> -->
-
-<!-- Project 2 -->
-<!-- <div id="card2" class="content-box">
-            <div id="front2" class="content-card-front">
-              <h3>Password Generator</h3>
-              <p>
-                Generates random passwords after the user selects their desired
-                criteria. The user can pick the character length, and choose to
-                include numbers, lowercase, uppercase, and special characters
-                through window prompts/confirmations. Users are then presented
-                with their new password on the screen.
-              </p>
-              <ul>
-                <li>Built with:</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-              </ul>
-            </div>
-            <div id="back2" class="content-card-back">
-              <a
-                href="https://github.com/dieterichelizabeth/prompt-password-maker"
-                rel="noopener noreferrer"
-                target="_blank"
-                >Github Repo</a
-              >
-              <h3>prompt-passowrd-maker</h3>
-              <a
-                href="https://dieterichelizabeth.github.io/prompt-password-maker/"
-              >
-                <img src="./Assets/images/passwordGenerator.png"
-              /></a>
-            </div>
-          </div> -->
-
-<!-- Project 3 -->
-<!-- <div id="card3" class="content-box">
-            <div id="front3" class="content-card-front">
-              <h3>Workday Timetable</h3>
-              <p>
-                A simple calendar app that allows the user to save events for
-                each hour of the day (9am to 5pm). The app keeps track of time
-                by changing the colors of the taskbox throughout the day. Users
-                can update tasks by double clicking on the task box itself,
-                entering the task for that time, and clicking the blue "save"
-                button.
-              </p>
-              <ul>
-                <li>Built with:</li>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>Javascript</li>
-              </ul>
-            </div>
-            <div id="back3" class="content-card-back">
-              <a
-                href="https://github.com/dieterichelizabeth/workday-timetable"
-                rel="noopener noreferrer"
-                target="_blank"
-                >Github Repo</a
-              >
-              <h3>prompt-passowrd-maker</h3>
-              <a href="https://dieterichelizabeth.github.io/workday-timetable/">
-                <img src="./Assets/images/workdayTimetable.png"
-              /></a>
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-<!-- About me section -->
-<!-- <section id="about-me" class="about">
-        <h2>
-          <span style="font-size: 30px; color: #b1bbec">02.</span>About Me
-        </h2> -->
-<!-- <hr style="width: 80%" /> -->
-<!-- <div>
-          <img src="./Assets/images/profile.png" alt="a smiling developer" />
-
-          <p>
-            <span style="color: #6fa8dc">Hello, my name is Liz. </span
-            >Previously, I studied Anthropology of linguistics and enjoyed
-            learning about communication between peoples 👥. Now, I communicate
-            with computers👩🏻‍💻. I love games like sudoku and using rules/logic to
-            solve problems. <br />
-            <br />
-            I’m currently studying full stack development at UT Austin bootcamp!
-            ✨ I’m excited to grow and continue to learn the many ways people
-            communicate with the world around them.
-          </p>
-        </div>
-      </section> -->
-
-<!-- Contact section -->
-<!-- <section id="contact-me" class="contact_container">
-        <h2><span style="font-size: 30px; color: #b1bbec">03.</span>Contact</h2>
-        <hr style="width: 80%" />
-        <div class="contact_text">
-          <h3>Reach Out</h3>
-          <p>
-            Thank you for taking the time to view my Portfolio! Please reach out
-            of you have any questions, or would like to chat. My inbox is always
-            open!
-          </p>
-          <a href="mailto:dieterichelizabeth@gmail.com" class="contact_email">
-            Email
-          </a>
-        </div>
-        <div class="contact_icons_container">
-          <div class="contact_icons">
-            <i class="fa-brands fa-html5 fa-5x"></i>
-            <p>HTML</p>
-          </div>
-          <div class="contact_icons">
-            <i class="fa-brands fa-css3-alt fa-5x"></i>
-            <p>CSS</p>
-          </div>
-          <div class="contact_icons">
-            <i class="fa-brands fa-js-square fa-5x"></i>
-            <p>JavaScript</p>
-          </div>
-          <div class="contact_icons">
-            <i class="fa-brands fa-node fa-5x"></i>
-            <p>Node.js</p>
-          </div>
-          <div class="contact_icons">
-            <i class="fa-solid fa-database fa-5x"></i>
-            <p>Mysql</p>
-          </div>
-          <div class="contact_icons">
-            <i class="fa-solid fa-server fa-5x"></i>
-            <p>Express.js</p>
-          </div>
-          <div class="contact_icons">
-            <i class="fa-brands fa-react fa-5x"></i>
-            <p>React.js</p>
-          </div>
-        </div>
-      </section> -->
-
-<!-- <div class="contact-links">
-  <a href="mailto:dieterichelizabeth@gmail.com">
-    <img src="./Assets/images/Email.png" />
-  </a>
-
-  <a href="https://github.com/dieterichelizabeth">
-    <img src="./Assets/images/github.png" />
-  </a>
-
-  <a href="https://www.linkedin.com/in/elizabeth-dieterich-067b55a8/">
-    <img src="./Assets/images/linkedin.png" />
-  </a>
-</div> -->
