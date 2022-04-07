@@ -26,6 +26,7 @@
       src="https://kit.fontawesome.com/1e188ab330.js"
       crossorigin="anonymous"
     ></script>
+    <!-- W3 css -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
   <body style="background-color: #23272a">
@@ -177,11 +178,10 @@
         <h2 class="project_head">Projects</h2>
         <hr style="width: 50%; margin-left: 25%" />
         <div class="container">
-          <div class="row d-flex justify-content-around">
+          <div class="row d-flex justify-content-between">
             <!-- Project 1 -->
             <div class="col-lg-4 col-md-12 project_card">
-              <div class="col-12 d-flex mt-4">
-                <h3 class="col-10">My Employee SQL: An Employee Tracker</h3>
+              <div class="col-12 d-flex mt-4 mb-4">
                 <a
                   href="https://github.com/dieterichelizabeth/my-employee-sql"
                   rel="noopener noreferrer"
@@ -189,8 +189,15 @@
                   class="col-2 project_icon"
                   ><i class="fa-brands fa-github fa-3x"></i
                 ></a>
+                <h3 class="col-10">My Employee SQL</h3>
               </div>
+              <img
+                src="./Assets/images/myEmployeeSql.png"
+                class="project_image"
+                alt=""
+              />
               <p class="project_description">
+                An Employee Tracker: <br />
                 My Employee SQL is a command line application which allows the
                 user to update a database of employees
               </p>
@@ -203,13 +210,10 @@
                 </div>
               </div>
             </div>
+
             <!-- Project 2 -->
             <div class="col-lg-4 col-md-12 project_card">
               <div class="col-12 d-flex mt-4">
-                <h3 class="col-10">
-                  Trading Post- Object Relational Mapping (ORM): E-commerce Back
-                  End
-                </h3>
                 <a
                   href="https://github.com/dieterichelizabeth/trading-post"
                   rel="noopener noreferrer"
@@ -217,8 +221,11 @@
                   class="col-2 project_icon"
                   ><i class="fa-brands fa-github fa-3x"></i
                 ></a>
+                <h3 class="col-10">Trading Post</h3>
               </div>
+              <img src="" class="project_image" alt="" />
               <p class="project_description">
+                Object Relational Mapping (ORM): E-commerce Back End - <br />
                 This project builds the back end for an e-commerce site- take a
                 working Express.js API and configuring it to use Sequelize to
                 interact with a MySQL database.
@@ -235,8 +242,7 @@
 
             <!-- Project 3 -->
             <div class="col-lg-4 col-md-12 project_card">
-              <div class="col-12 d-flex mt-4">
-                <h3 class="col-10">Weathering With Api's: Weather Dashboard</h3>
+              <div class="col-12 d-flex mt-4 mb-4">
                 <a
                   href="https://github.com/dieterichelizabeth/weathering-with-apis"
                   rel="noopener noreferrer"
@@ -244,11 +250,18 @@
                   class="col-2 project_icon"
                   ><i class="fa-brands fa-github fa-3x"></i
                 ></a>
+                <h3 class="col-10">Weathering With Api's</h3>
               </div>
+              <img
+                src="./Assets//images/weatherApi.png"
+                class="project_image"
+                alt=""
+              />
               <p class="project_description">
-                This project is a weather dashboard which pulls weather
-                information from a third party api to display dynamically to the
-                user.
+                Weather Dashboard: <br />
+                This project uses JavaScript to source weather data from the
+                "Open Weather" Api, then dynamically display to the user. User's
+                are able to search by city name in the search bar.
               </p>
 
               <div class="project_tools_container">
@@ -280,12 +293,12 @@
                   <div style="color: white">
                     <p>
                       <a
-                        href="https://github.com/dieterichelizabeth/quiz-wars"
+                        href="https://dieterichelizabeth.github.io/quiz-wars/"
                         rel="noopener noreferrer"
                         target="_blank"
                         >Quiz Wars</a
                       >
-                      : a Javascript timed quiz
+                      : a timed quiz about JavaScript.
                     </p>
                   </div>
                 </div>
@@ -296,81 +309,104 @@
       </section>
 
       <!-- About me section -->
-      <section id="about-me" class="about">
-        <div class="container">
-          <h2>About me</h2>
-          <hr style="width: 50%; margin-left: 25%" />
-          <div class="row d-flex justify-content-between">
-            <img
-              src="./Assets/images/profile.png"
-              alt="A smiling developer with brown hair and a grey sweather."
-              class="col-lg-4 col-md-12"
-              style="width: 100%; border-radius: 50px"
-            />
-            <p class="col-lg-8 col-md-12">
-              <span style="color: #6fa8dc">Hello, my name is Liz. </span
-              >Previously, I studied Anthropology of linguistics and enjoyed
-              learning about communication between peoples 👥. Now, I
-              communicate with computers👩🏻‍💻. I love games like sudoku and using
-              rules/logic to solve problems. <br />
-              <br />
-              I’m currently studying full stack development at UT Austin
-              bootcamp! ✨ I’m excited to grow and continue to learn the many
-              ways people communicate with the world around them.
-            </p>
+      <section class="container">
+        <div class="row">
+          <div id="about-me" class="about col-lg-6 col-md-12">
+            <div class="container">
+              <h2>About</h2>
+              <hr style="width: 50%; margin-left: 25%" />
+              <div class="row d-flex justify-content-center">
+                <img
+                  src="./Assets/images/profile.png"
+                  alt="A smiling developer with brown hair and a grey sweather."
+                  class="col-10 mb-4"
+                  style="width: 100%; border-radius: 50px"
+                />
+                <p class="col-12">
+                  <span style="color: #6fa8dc">Hello, my name is Liz. </span
+                  >Previously, I studied Anthropology of linguistics and enjoyed
+                  learning about communication between peoples 👥. Now, I
+                  communicate with computers👩🏻‍💻. I love games like sudoku and
+                  using rules/logic to solve problems. <br />
+                  <br />
+                  I’m currently studying full stack development at UT Austin
+                  bootcamp! ✨ I’m excited to grow and continue to learn the
+                  many ways people communicate with the world around them.
+                </p>
+              </div>
+            </div>
           </div>
-        </div>
-      </section>
 
-      <!-- Contact section -->
-      <section id="contact-me" class="container">
-        <h2>Contact</h2>
-        <hr style="width: 50%; margin-left: 25%" />
-        <div class="row d-flex justify-content-center">
-          <h3 class="col-4">Reach Out</h3>
-          <div class="col-8">
-            <p class="col-12">
-              Thank you for taking the time to view my Portfolio! Please reach
-              out of you have any questions, or would like to chat. My inbox is
-              always open!
-            </p>
-            <a
-              href="mailto:dieterichelizabeth@gmail.com"
-              class="btn btn-dark col-6"
+          <!-- Contact section -->
+          <div id="contact-me" class="col-lg-6 col-md-12">
+            <h2>Contact</h2>
+            <hr style="width: 50%; margin-left: 25%" />
+            <div class="row d-flex justify-content-center">
+              <h3 class="col-4 about_h3">Reach Out</h3>
+              <div class="col-8">
+                <p class="col-12">
+                  Thank you for taking the time to view my Portfolio! Please
+                  reach for business inquries, or if you have any quesitons. My
+                  inbox is always open ~
+                </p>
+                <a
+                  href="mailto:dieterichelizabeth@gmail.com"
+                  class="btn btn-dark col-10 ml-4"
+                >
+                  Email Now
+                </a>
+              </div>
+            </div>
+            <div class="col-12 mt-4">
+              <p><i class="fa-solid fa-location-dot"></i> TX, USA</p>
+              <p>
+                <i class="fa-solid fa-envelope"></i> Email:
+                dieterichelizabeth@gmail.com
+              </p>
+              <p>
+                <i class="fa-brands fa-github"></i> Github: dieterichelizabeth
+              </p>
+              <p>
+                <i class="fa-brands fa-linkedin"></i> Linkedin:
+                https://www.linkedin.com/in/elizabeth-dieterich-067b55a8/
+              </p>
+            </div>
+            <p class="mt-4" style="text-align: center">Mern Stack</p>
+            <div
+              class="row d-flex justify-content-around col-12"
+              style="margin-top: 50px"
             >
-              Email
-            </a>
-          </div>
-        </div>
-        <div
-          class="row d-flex justify-content-around col-12"
-          style="margin-top: 50px"
-        >
-          <div class="contact_icons col-1">
-            <i class="fa-brands fa-html5 fa-2x"></i>
-          </div>
-          <div class="contact_icons col-1">
-            <i class="fa-brands fa-css3-alt fa-2x"></i>
-          </div>
-          <div class="contact_icons col-1">
-            <i class="fa-brands fa-js-square fa-2x"></i>
-          </div>
-          <div class="contact_icons col-1">
-            <i class="fa-brands fa-node fa-2x"></i>
-          </div>
-          <div class="contact_icons col-1">
-            <i class="fa-solid fa-database fa-2x"></i>
-          </div>
-          <div class="contact_icons col-1">
-            <i class="fa-solid fa-server fa-2x"></i>
-          </div>
-          <div class="contact_icons col-1">
-            <i class="fa-brands fa-react fa-2x"></i>
+              <div class="contact_icons col-1">
+                <i class="fa-brands fa-html5 fa-2x"></i>
+              </div>
+              <div class="contact_icons col-1">
+                <i class="fa-brands fa-css3-alt fa-2x"></i>
+              </div>
+              <div class="contact_icons col-1">
+                <i class="fa-brands fa-js-square fa-2x"></i>
+              </div>
+              <div class="contact_icons col-1">
+                <i class="fa-brands fa-node fa-2x"></i>
+              </div>
+              <div class="contact_icons col-1">
+                <i class="fa-solid fa-database fa-2x"></i>
+              </div>
+              <div class="contact_icons col-1">
+                <i class="fa-solid fa-server fa-2x"></i>
+              </div>
+              <div class="contact_icons col-1">
+                <i class="fa-brands fa-react fa-2x"></i>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
-    <footer style="color: white">Made with love</footer>
+    <footer>
+      <span style="font-size: 17px">Liz Dieterich</span> 2022 <br />
+      Made with love, <i class="fa-brands fa-bootstrap"></i> Bootstrap, and
+      W3css
+    </footer>
     <script src="./Assets/js/script.js"></script>
     <script>
       function w3_open() {
