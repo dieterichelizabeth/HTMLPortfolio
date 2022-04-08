@@ -127,54 +127,50 @@
 
     <main>
       <!-- Featured Project -->
-      <section>
+      <div class="featured_project">
         <div class="container">
-          <div
-            class="row"
-            style="
-              background-color: #f3f3f334;
-              border: 1px solid #595959;
-              border-radius: 10px;
-            "
-          >
-            <h2 class="col-12" style="text-align: center">Featured Project</h2>
-            <h3 class="col-12">Pomodorian - a Pomodoro App</h3>
-            <div class="col-sm">
+          <div class="row">
+            <h2 class="col-12 featured_project_h2">Featured Project</h2>
+            <hr style="width: 50%; margin-left: 25%; color: white" />
+            <h3 class="col-12">Zoolander</h3>
+            <div class="col-lg-4 col-md-12">
               <p>
-                A group project built for coding camp. The project uses two
-                server side api's to display multimedia in the form of
-                photos/inspirational quotes. The goal- to build upon the concept
-                of a pomodoro study app.
+                A full stack group project for coding bootcamp. The project uses
+                express and express session to allow users to create an
+                account/login. Once logged in, users are able to view our
+                collection of live cams from various sources across the
+                interweb! Video data is stored in Zoolander's database and
+                fetched from the API for display. The goal- to create a fun,
+                relaxing app where users can unwind either during or after a
+                long day of coding.
               </p>
-            </div>
-            <div class="col-sm">
               <a
-                href="https://dieterichelizabeth.github.io/project-mixtape-pivot/"
-              >
-                <img src="./Assets/images/pomodorian.png" style="width: 100%" />
-              </a>
-            </div>
-            <div class="col-sm">
-              <a
-                href="https://github.com/dieterichelizabeth/project-mixtape-pivot"
+                href="https://github.com/JFlo1981/Virtual-Zoo"
                 rel="noopener noreferrer"
                 target="_blank"
+                style="color: white"
                 ><i class="fa-brands fa-github"></i> Github Repo</a
               >
-              <h3>Project-mixtape-pivot</h3>
-              <ul>
-                <li>Built with:</li>
-                <li>Javascript</li>
-                <li>Node.js</li>
-                <li>Tailwind</li>
-              </ul>
+            </div>
+
+            <div class="col-lg-8 col-md-12">
+              <a href="#appLinkGoesHere">
+                <img src="./Assets/images/zoolander.png" style="width: 100%" />
+              </a>
+            </div>
+            <div class="project_tools_container">
+              <div class="col-12 d-flex justify-content-around">
+                <p class="col-4 project_tools">Swiper.js</p>
+                <p class="col-4 project_tools">Sequelize</p>
+                <p class="col-4 project_tools">Express.Handlebars</p>
+              </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
 
       <!-- Project cards -->
-      <section id="projects">
+      <section id="projects" style="margin-bottom: 200px">
         <h2 class="project_head">Projects</h2>
         <hr style="width: 50%; margin-left: 25%" />
         <div class="container">
@@ -300,6 +296,26 @@
                       >
                       : a timed quiz about JavaScript.
                     </p>
+                    <p>
+                      <a
+                        href="https://nameless-spire-63081.herokuapp.com/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Notes Delivery Service</a
+                      >
+                      : a Note taking app which stores your notes in a json file
+                      using express.js.
+                    </p>
+                    <p>
+                      <a
+                        href="https://dieterichelizabeth.github.io/workday-timetable/"
+                        rel="noopener noreferrer"
+                        target="_blank"
+                        >Workday Timetable</a
+                      >
+                      : a browser application which stores daily tasks in local
+                      storage. Layout matches a 9am - 5pm work day.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -338,7 +354,11 @@
           </div>
 
           <!-- Contact section -->
-          <div id="contact-me" class="col-lg-6 col-md-12">
+          <div
+            id="contact-me"
+            class="col-lg-6 col-md-12"
+            style="margin-bottom: 200px"
+          >
             <h2>Contact</h2>
             <hr style="width: 50%; margin-left: 25%" />
             <div class="row d-flex justify-content-center">

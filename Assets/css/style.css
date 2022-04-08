@@ -19,12 +19,12 @@ p {
 
 section {
   min-height: 100vh;
+  /* border: 1px solid #f00; */
 }
 
 h2 {
   text-align: center;
   font-size: 25px;
-  /* color: #99aab5; */
   color: var(--primary-color);
 }
 
@@ -64,10 +64,22 @@ nav p {
   margin-left: 25%;
 }
 
+.featured_project {
+  background-color: var(--primary-color);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-bottom: 50px;
+  margin-bottom: 150px;
+}
+
+.featured_project_h2 {
+  text-align: center;
+  color: white;
+}
+
 /* Begin styles to Project Cards*/
 .project_head {
   text-align: center;
-  color: white;
 }
 
 .project_card {
