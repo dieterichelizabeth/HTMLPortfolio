@@ -105,7 +105,7 @@
     </nav>
 
     <!-- Welcome text -->
-    <section>
+    <section style="min-height: 100vh">
       <div class="welcome">
         <div class="w3-container w3-center w3-animate-bottom">
           <p>Hi, my name is</p>
@@ -133,16 +133,18 @@
             <h2 class="col-12 featured_project_h2">Featured Project</h2>
             <hr style="width: 50%; margin-left: 25%; color: white" />
             <h3 class="col-12">Zoolander</h3>
-            <div class="col-lg-4 col-md-12">
+            <div
+              class="col-lg-4 col-md-12"
+              style="margin-top: 20px; margin-bottom: 2px; margin-bottom: 20px"
+            >
               <p>
                 A full stack group project for coding bootcamp. The project uses
-                express and express session to allow users to create an
-                account/login. Once logged in, users are able to view our
-                collection of live cams from various sources across the
-                interweb! Video data is stored in Zoolander's database and
-                fetched from the API for display. The goal- to create a fun,
-                relaxing app where users can unwind either during or after a
-                long day of coding.
+                express and express session to allow users to sign up or log in.
+                Once logged in, users are able to view our collection of live
+                cams from various sources across the interweb! Video data is
+                stored in Zoolander's database and fetched from the API for
+                display. The goal- to create a fun, relaxing app where users can
+                unwind either during or after a long day of coding.
               </p>
               <a
                 href="https://github.com/JFlo1981/Virtual-Zoo"
@@ -160,9 +162,10 @@
             </div>
             <div class="project_tools_container">
               <div class="col-12 d-flex justify-content-around">
-                <p class="col-4 project_tools">Swiper.js</p>
-                <p class="col-4 project_tools">Sequelize</p>
-                <p class="col-4 project_tools">Express.Handlebars</p>
+                <p class="col-3 project_tools">Swiper.js</p>
+                <p class="col-3 project_tools">Node.js</p>
+                <p class="col-3 project_tools">Sequelize</p>
+                <p class="col-3 project_tools">Express.Handlebars</p>
               </div>
             </div>
           </div>
@@ -170,101 +173,107 @@
       </div>
 
       <!-- Project cards -->
-      <section id="projects" style="margin-bottom: 200px">
+      <section id="projects" style="margin-bottom: 200px; min-height: 100vh">
         <h2 class="project_head">Projects</h2>
         <hr style="width: 50%; margin-left: 25%" />
         <div class="container">
           <div class="row d-flex justify-content-between">
             <!-- Project 1 -->
-            <div class="col-lg-4 col-md-12 project_card">
-              <div class="col-12 d-flex mt-4 mb-4">
-                <a
-                  href="https://github.com/dieterichelizabeth/my-employee-sql"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  class="col-2 project_icon"
-                  ><i class="fa-brands fa-github fa-3x"></i
-                ></a>
-                <h3 class="col-10">My Employee SQL</h3>
-              </div>
-              <img
-                src="./Assets/images/myEmployeeSql.png"
-                class="project_image"
-                alt=""
-              />
-              <p class="project_description">
-                An Employee Tracker: <br />
-                My Employee SQL is a command line application which allows the
-                user to update a database of employees
-              </p>
+            <div class="col-lg-4 col-md-12">
+              <div class="project_card">
+                <div class="col-12 d-flex mt-4 mb-4">
+                  <a
+                    href="https://github.com/dieterichelizabeth/my-employee-sql"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="col-2 project_icon"
+                    ><i class="fa-brands fa-github fa-3x"></i
+                  ></a>
+                  <h3 class="col-10">My Employee SQL</h3>
+                </div>
+                <img
+                  src="./Assets/images/myEmployeeSql.png"
+                  class="project_image"
+                  alt=""
+                />
+                <p class="project_description">
+                  An Employee Tracker: <br />
+                  My Employee SQL is a command line application which allows the
+                  user to update a database of employees
+                </p>
 
-              <div class="project_tools_container">
-                <div class="col-12 d-flex justify-content-between">
-                  <p class="col-4 project_tools">MySQL</p>
-                  <p class="col-4 project_tools">Inquirer</p>
-                  <p class="col-4 project_tools">JavaScript</p>
+                <div class="project_tools_container">
+                  <div class="col-12 d-flex justify-content-between">
+                    <p class="col-4 project_tools">MySQL</p>
+                    <p class="col-4 project_tools">Inquirer</p>
+                    <p class="col-4 project_tools">JavaScript</p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Project 2 -->
-            <div class="col-lg-4 col-md-12 project_card">
-              <div class="col-12 d-flex mt-4">
-                <a
-                  href="https://github.com/dieterichelizabeth/trading-post"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  class="col-2 project_icon"
-                  ><i class="fa-brands fa-github fa-3x"></i
-                ></a>
-                <h3 class="col-10">Trading Post</h3>
-              </div>
-              <img src="" class="project_image" alt="" />
-              <p class="project_description">
-                Object Relational Mapping (ORM): E-commerce Back End - <br />
-                This project builds the back end for an e-commerce site- take a
-                working Express.js API and configuring it to use Sequelize to
-                interact with a MySQL database.
-              </p>
+            <div class="col-lg-4 col-md-12">
+              <div class="project_card">
+                <div class="col-12 d-flex mt-4">
+                  <a
+                    href="https://github.com/dieterichelizabeth/trading-post"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="col-2 project_icon"
+                    ><i class="fa-brands fa-github fa-3x"></i
+                  ></a>
+                  <h3 class="col-10">Trading Post</h3>
+                </div>
+                <img src="" class="project_image" alt="" />
+                <p class="project_description">
+                  Object Relational Mapping (ORM): E-commerce Back End - <br />
+                  This project builds the back end for an e-commerce site- take
+                  a working Express.js API and configuring it to use Sequelize
+                  to interact with a MySQL database.
+                </p>
 
-              <div class="project_tools_container">
-                <div class="col-12 d-flex justify-content-between">
-                  <p class="col-4 project_tools">Express.js</p>
-                  <p class="col-4 project_tools">Sequelize</p>
-                  <p class="col-4 project_tools">JavaScript</p>
+                <div class="project_tools_container">
+                  <div class="col-12 d-flex justify-content-between">
+                    <p class="col-4 project_tools">Express.js</p>
+                    <p class="col-4 project_tools">Sequelize</p>
+                    <p class="col-4 project_tools">JavaScript</p>
+                  </div>
                 </div>
               </div>
             </div>
 
             <!-- Project 3 -->
-            <div class="col-lg-4 col-md-12 project_card">
-              <div class="col-12 d-flex mt-4 mb-4">
-                <a
-                  href="https://github.com/dieterichelizabeth/weathering-with-apis"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                  class="col-2 project_icon"
-                  ><i class="fa-brands fa-github fa-3x"></i
-                ></a>
-                <h3 class="col-10">Weathering With Api's</h3>
-              </div>
-              <img
-                src="./Assets//images/weatherApi.png"
-                class="project_image"
-                alt=""
-              />
-              <p class="project_description">
-                Weather Dashboard: <br />
-                This project uses JavaScript to source weather data from the
-                "Open Weather" Api, then dynamically display to the user. User's
-                are able to search by city name in the search bar.
-              </p>
+            <div class="col-lg-4 col-md-12">
+              <div class="project_card">
+                <div class="col-12 d-flex mt-4 mb-4">
+                  <a
+                    href="https://github.com/dieterichelizabeth/weathering-with-apis"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    class="col-2 project_icon"
+                    ><i class="fa-brands fa-github fa-3x"></i
+                  ></a>
+                  <h3 class="col-10">Weathering With Api's</h3>
+                </div>
+                <img
+                  src="./Assets//images/weatherApi.png"
+                  class="project_image"
+                  alt=""
+                />
+                <p class="project_description">
+                  Weather Dashboard: <br />
+                  This project uses JavaScript to source weather data from the
+                  "Open Weather" Api, then dynamically display to the user.
+                  User's are able to search by city name in the search bar.
+                </p>
 
-              <div class="project_tools_container">
-                <div class="col-12 d-flex justify-content-between">
-                  <p class="col-4 project_tools">HTML</p>
-                  <p class="col-4 project_tools">CSS</p>
-                  <p class="col-4 project_tools">JavaScript</p>
+                <div class="project_tools_container">
+                  <div class="col-12 d-flex justify-content-between">
+                    <p class="col-4 project_tools">HTML</p>
+                    <p class="col-4 project_tools">CSS</p>
+                    <p class="col-4 project_tools">JavaScript</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -391,7 +400,7 @@
                 https://www.linkedin.com/in/elizabeth-dieterich-067b55a8/
               </p>
             </div>
-            <p class="mt-4" style="text-align: center">Mern Stack</p>
+            <p style="text-align: center; margin-top: 70px">Mern Stack</p>
             <div
               class="row d-flex justify-content-around col-12"
               style="margin-top: 50px"
