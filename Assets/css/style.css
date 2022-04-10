@@ -14,7 +14,7 @@
 
 p {
   font-size: 20px;
-  color: white;
+  color: black;
 }
 
 h2 {
@@ -24,7 +24,17 @@ h2 {
 }
 
 h3 {
-  color: white;
+  color: black;
+}
+
+.featured_project hr,
+#projects hr,
+.welcome hr,
+#contact-me hr,
+#about-me hr {
+  border-top: 1px solid #99aab5;
+  width: 50%;
+  margin-left: 25%;
 }
 
 /* Begin styles to Nav */
@@ -40,36 +50,33 @@ nav p {
 }
 /* Begin styles to Welcome */
 .welcome {
-  margin-top: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .welcome h1 {
-  color: white;
+  color: black;
   font-family: "Roboto Mono", monospace;
   font-size: 50px;
 }
 
 .welcome p {
-  color: white;
+  color: black;
 }
 
-.welcome hr {
-  border-top: 1px solid #99aab5;
-  width: 50%;
-  margin-left: 25%;
+#profile_image {
+  width: 20%;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .featured_project {
+  background-color: #f3f3f38d;
   margin-bottom: 150px;
+  padding-top: 70px;
 }
-
-/* .featured_project {
-  background-color: var(--primary-color);
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  padding-bottom: 50px;
-  margin-bottom: 150px;
-} */
 
 /* Begin styles to Project Cards*/
 .project_head {
@@ -79,8 +86,9 @@ nav p {
 .project_card {
   color: white;
   background-color: #99aab51c;
-  border: 1px solid #595959;
-  border-radius: 20px;
+  border: 1px solid #f3f3f38d;
+  margin-bottom: 20px;
+  padding: 10px;
 }
 
 .project_image {
@@ -112,15 +120,15 @@ nav p {
 
 /* Begin styles to About/contact */
 .about {
-  margin-bottom: 200px;
+  margin-bottom: 100px;
 }
 
 .about_h3 {
   margin-top: 70px;
 }
 
-.contact_icons {
-  color: white;
+#contact-me {
+  background-color: #f3f3f38d;
 }
 
 /* Begin styles to Footer */
@@ -134,10 +142,22 @@ footer {
 }
 
 /* MEDIA QUERY FOR 980px */
-/* @media screen and (max-width: 980px) {} */
+@media screen and (max-width: 980px) {
+  #profile_image {
+    width: 30%;
+  }
+}
 
 /* MEDIA QUERY FOR 768px */
-/* @media screen and (max-width: 768px) {} */
+@media screen and (max-width: 768px) {
+  #profile_image {
+    width: 40%;
+  }
+}
 
 /* MEDIA QUERY FOR 575px */
-/* @media screen and (max-width: 575px) {} */
+@media screen and (max-width: 575px) {
+  #profile_image {
+    width: 50%;
+  }
+}

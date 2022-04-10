@@ -22,19 +22,15 @@
       rel="stylesheet"
     />
     <!-- Font Awesome! -->
-    <script
-      src="https://kit.fontawesome.com/1e188ab330.js"
-      crossorigin="anonymous"
-    ></script>
     <!-- W3 css -->
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
   </head>
-  <body style="background-color: #23272a">
+  <body>
     <!-- Sidebar -->
     <nav>
       <div
         class="w3-sidebar w3-bar-block nav_button"
-        style="display: none; background-color: #23272a"
+        style="display: none; background-color: white"
         id="mySidebar"
       >
         <button
@@ -45,30 +41,12 @@
           Close &times;
         </button>
         <p>Navigation</p>
-        <a
-          href="#projects"
-          class="w3-bar-item w3-button"
-          style="color: #f0eeeec1"
-          ><i class="fa-solid fa-screwdriver-wrench"></i> Projects</a
-        >
-        <a
-          href="#about-me"
-          class="w3-bar-item w3-button"
-          style="color: #f0eeeec1"
-        >
-          <i class="fa-solid fa-user"></i> About Me
-        </a>
-        <a
-          href="#contact-me"
-          class="w3-bar-item w3-button"
-          style="color: #f0eeeec1"
-          ><i class="fa-solid fa-address-card"></i> Contact</a
-        >
+        <a href="#projects" class="w3-bar-item w3-button"> Projects</a>
+        <a href="#about-me" class="w3-bar-item w3-button"> About Me </a>
+        <a href="#contact-me" class="w3-bar-item w3-button"> Contact</a>
         <br />
         <p>Documents</p>
-        <a href="resume" class="w3-bar-item w3-button" style="color: #f0eeeec1">
-          Resume
-        </a>
+        <a href="resume" class="w3-bar-item w3-button"> Resume </a>
         <br />
         <p>Contact</p>
         <a
@@ -76,38 +54,39 @@
           class="w3-bar-item w3-button"
           target="_blank"
           rel="noopener noreferrer"
-          style="color: #f0eeeec1"
         >
-          <i class="fa-solid fa-envelope"></i> Email
+          Email
         </a>
         <a
           href="https://github.com/dieterichelizabeth"
           class="w3-bar-item w3-button"
           target="_blank"
           rel="noopener noreferrer"
-          style="color: #f0eeeec1"
         >
-          <i class="fa-brands fa-github"></i> Github
+          Github
         </a>
         <a
           href="https://www.linkedin.com/in/elizabeth-dieterich-067b55a8/"
           class="w3-bar-item w3-button"
           target="_blank"
           rel="noopener noreferrer"
-          style="color: #f0eeeec1"
         >
-          <i class="fa-brands fa-linkedin"></i> Linkedin
+          Linkedin
         </a>
       </div>
-      <button class="w3-button w3-xlarge" onclick="w3_open()">
-        <i class="fa-solid fa-bars" style="color: #f0eeeec1"></i>
+      <button
+        class="w3-button w3-xlarge"
+        style="color: black"
+        onclick="w3_open()"
+      >
+        &#9776;
       </button>
     </nav>
 
     <!-- Welcome text -->
-    <section style="min-height: 100vh">
+    <section>
       <div class="welcome">
-        <div class="w3-container w3-center w3-animate-bottom">
+        <div class="w3-container w3-center w3-animate-top">
           <p>Hi, my name is</p>
         </div>
         <div class="w3-container w3-center w3-animate-right">
@@ -119,19 +98,18 @@
         <div class="w3-container w3-center w3-animate-left">
           <hr />
         </div>
-        <div class="w3-container w3-center w3-animate-top">
+        <div class="w3-container w3-center w3-animate-bottom">
           <h2>FULL STACK DEVELOPER</h2>
         </div>
       </div>
     </section>
-
     <main>
       <!-- Featured Project -->
       <div class="featured_project">
         <div class="container">
           <div class="row">
             <h2 class="col-12 featured_project_h2">Featured Project</h2>
-            <hr style="width: 50%; margin-left: 25%; color: white" />
+            <hr />
             <h3 class="col-12">Zoolander</h3>
             <div
               class="col-lg-4 col-md-12"
@@ -146,13 +124,12 @@
                 display. The goal- to create a fun, relaxing app where users can
                 unwind either during or after a long day of coding.
               </p>
-              <a
-                href="https://github.com/JFlo1981/Virtual-Zoo"
-                rel="noopener noreferrer"
-                target="_blank"
-                style="color: white"
-                ><i class="fa-brands fa-github"></i> Github Repo</a
-              >
+              <div class="col-12 d-flex justify-content-between">
+                <a class="col-6" href="https://github.com/JFlo1981/Virtual-Zoo"
+                  >Github Repo</a
+                >
+                <a class="col-6" href="">Deployed Application</a>
+              </div>
             </div>
 
             <div class="col-lg-8 col-md-12">
@@ -175,11 +152,11 @@
       <!-- Project cards -->
       <section id="projects" style="margin-bottom: 200px; min-height: 100vh">
         <h2 class="project_head">Projects</h2>
-        <hr style="width: 50%; margin-left: 25%" />
+        <hr />
         <div class="container">
           <div class="row d-flex justify-content-between">
             <!-- Project 1 -->
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-6 col-md-12">
               <div class="project_card">
                 <div class="col-12 d-flex mt-4 mb-4">
                   <a
@@ -187,8 +164,9 @@
                     rel="noopener noreferrer"
                     target="_blank"
                     class="col-2 project_icon"
-                    ><i class="fa-brands fa-github fa-3x"></i
-                  ></a>
+                    style="color: black"
+                    >Github Repo</a
+                  >
                   <h3 class="col-10">My Employee SQL</h3>
                 </div>
                 <img
@@ -213,38 +191,7 @@
             </div>
 
             <!-- Project 2 -->
-            <div class="col-lg-4 col-md-12">
-              <div class="project_card">
-                <div class="col-12 d-flex mt-4">
-                  <a
-                    href="https://github.com/dieterichelizabeth/trading-post"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    class="col-2 project_icon"
-                    ><i class="fa-brands fa-github fa-3x"></i
-                  ></a>
-                  <h3 class="col-10">Trading Post</h3>
-                </div>
-                <img src="" class="project_image" alt="" />
-                <p class="project_description">
-                  Object Relational Mapping (ORM): E-commerce Back End - <br />
-                  This project builds the back end for an e-commerce site- take
-                  a working Express.js API and configuring it to use Sequelize
-                  to interact with a MySQL database.
-                </p>
-
-                <div class="project_tools_container">
-                  <div class="col-12 d-flex justify-content-between">
-                    <p class="col-4 project_tools">Express.js</p>
-                    <p class="col-4 project_tools">Sequelize</p>
-                    <p class="col-4 project_tools">JavaScript</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="col-lg-4 col-md-12">
+            <div class="col-lg-6 col-md-12">
               <div class="project_card">
                 <div class="col-12 d-flex mt-4 mb-4">
                   <a
@@ -252,8 +199,9 @@
                     rel="noopener noreferrer"
                     target="_blank"
                     class="col-2 project_icon"
-                    ><i class="fa-brands fa-github fa-3x"></i
-                  ></a>
+                    style="color: black"
+                    >Github Repo</a
+                  >
                   <h3 class="col-10">Weathering With Api's</h3>
                 </div>
                 <img
@@ -279,12 +227,44 @@
             </div>
           </div>
 
+          <!-- Project 3 -->
+          <div class="col-lg-6 col-md-12">
+            <div class="project_card">
+              <div class="col-12 d-flex mt-4">
+                <a
+                  href="https://github.com/dieterichelizabeth/trading-post"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  class="col-2 project_icon"
+                  style="color: black"
+                  >Github Repo</a
+                >
+                <h3 class="col-10">Trading Post</h3>
+              </div>
+              <img src="" class="project_image" alt="" />
+              <p class="project_description">
+                Object Relational Mapping (ORM): E-commerce Back End - <br />
+                This project builds the back end for an e-commerce site- take a
+                working Express.js API and configuring it to use Sequelize to
+                interact with a MySQL database.
+              </p>
+
+              <div class="project_tools_container">
+                <div class="col-12 d-flex justify-content-between">
+                  <p class="col-4 project_tools">Express.js</p>
+                  <p class="col-4 project_tools">Sequelize</p>
+                  <p class="col-4 project_tools">JavaScript</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <!-- More Projects Dropdown -->
           <div class="w3-container col-12">
             <div
               class="w3-dropdown-hover col-12"
               style="
-                color: white;
+                color: black;
                 background-color: transparent;
                 margin-top: 20px;
               "
@@ -295,7 +275,7 @@
                 style="background-color: transparent"
               >
                 <div class="w3-container">
-                  <div style="color: white">
+                  <div style="color: black">
                     <p>
                       <a
                         href="https://dieterichelizabeth.github.io/quiz-wars/"
@@ -333,108 +313,89 @@
         </div>
       </section>
 
+      <img
+        src="./Assets/images/profile.png"
+        alt="A smiling developer with brown hair and a grey sweather."
+        class="col-10 mb-4"
+        id="profile_image"
+      />
       <!-- About me section -->
-      <section class="container">
-        <div class="row">
-          <div id="about-me" class="about col-lg-6 col-md-12">
-            <div class="container">
-              <h2>About</h2>
-              <hr style="width: 50%; margin-left: 25%" />
-              <div class="row d-flex justify-content-center">
-                <img
-                  src="./Assets/images/profile.png"
-                  alt="A smiling developer with brown hair and a grey sweather."
-                  class="col-10 mb-4"
-                  style="width: 100%; border-radius: 50px"
-                />
-                <p class="col-12">
-                  <span style="color: #6fa8dc">Hello, my name is Liz. </span
-                  >Previously, I studied Anthropology of linguistics and enjoyed
-                  learning about communication between peoples 👥. Now, I
-                  communicate with computers👩🏻‍💻. I love games like sudoku and
-                  using rules/logic to solve problems. <br />
-                  <br />
-                  I’m currently studying full stack development at UT Austin
-                  bootcamp! ✨ I’m excited to grow and continue to learn the
-                  many ways people communicate with the world around them.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Contact section -->
-          <div
-            id="contact-me"
-            class="col-lg-6 col-md-12"
-            style="margin-bottom: 200px"
-          >
-            <h2>Contact</h2>
-            <hr style="width: 50%; margin-left: 25%" />
-            <div class="row d-flex justify-content-center">
-              <h3 class="col-4 about_h3">Reach Out</h3>
-              <div class="col-8">
-                <p class="col-12">
-                  Thank you for taking the time to view my Portfolio! Please
-                  reach for business inquries, or if you have any quesitons. My
-                  inbox is always open ~
-                </p>
-                <a
-                  href="mailto:dieterichelizabeth@gmail.com"
-                  class="btn btn-dark col-10 ml-4"
-                >
-                  Email Now
-                </a>
-              </div>
-            </div>
-            <div class="col-12 mt-4">
-              <p><i class="fa-solid fa-location-dot"></i> TX, USA</p>
-              <p>
-                <i class="fa-solid fa-envelope"></i> Email:
-                dieterichelizabeth@gmail.com
-              </p>
-              <p>
-                <i class="fa-brands fa-github"></i> Github: dieterichelizabeth
-              </p>
-              <p>
-                <i class="fa-brands fa-linkedin"></i> Linkedin:
-                https://www.linkedin.com/in/elizabeth-dieterich-067b55a8/
-              </p>
-            </div>
-            <p style="text-align: center; margin-top: 70px">Mern Stack</p>
-            <div
-              class="row d-flex justify-content-around col-12"
-              style="margin-top: 50px"
-            >
-              <div class="contact_icons col-1">
-                <i class="fa-brands fa-html5 fa-2x"></i>
-              </div>
-              <div class="contact_icons col-1">
-                <i class="fa-brands fa-css3-alt fa-2x"></i>
-              </div>
-              <div class="contact_icons col-1">
-                <i class="fa-brands fa-js-square fa-2x"></i>
-              </div>
-              <div class="contact_icons col-1">
-                <i class="fa-brands fa-node fa-2x"></i>
-              </div>
-              <div class="contact_icons col-1">
-                <i class="fa-solid fa-database fa-2x"></i>
-              </div>
-              <div class="contact_icons col-1">
-                <i class="fa-solid fa-server fa-2x"></i>
-              </div>
-              <div class="contact_icons col-1">
-                <i class="fa-brands fa-react fa-2x"></i>
-              </div>
-            </div>
+      <div id="about-me" class="about col-12">
+        <div class="container">
+          <h2>About</h2>
+          <hr />
+          <div class="row d-flex justify-content-center">
+            <p class="col-12">
+              <span style="color: #6fa8dc">Hello, my name is Liz. </span> I
+              study full stack web development at UTA bootcamp. I create
+              websites and applications using HTML, CSS, and Javascript.
+            </p>
           </div>
         </div>
-      </section>
+      </div>
+
+      <!-- Contact section -->
+      <div class="container">
+        <div class="row">
+          <div id="contact-me" class="col-12" style="margin-bottom: 200px">
+            <h2>Contact</h2>
+            <hr />
+            <p class="col-12">
+              Thank you for taking the time to view my Portfolio! Please reach
+              for business inquries, or if you have any quesitons. My inbox is
+              always open ~
+            </p>
+            <div class="col-12 mt-4">
+              <div class="d-flex col-12">
+                <img
+                  src="./Assets/images/location.png"
+                  style="height: 30px"
+                  class="mr-4"
+                />
+                <p>TX, USA</p>
+              </div>
+              <div class="d-flex col-12">
+                <img
+                  src="./Assets/images/email.png"
+                  style="height: 20px"
+                  class="mr-4"
+                />
+                <p>Email: dieterichelizabeth@gmail.com</p>
+              </div>
+              <div class="d-flex col-12">
+                <img
+                  src="./Assets/images/github.png"
+                  style="height: 25px"
+                  class="mr-4"
+                />
+                <p>Github: dieterichelizabeth</p>
+              </div>
+              <div class="d-flex col-12">
+                <img
+                  src="./Assets/images/linkedin.png"
+                  style="height: 25px"
+                  class="mr-4"
+                />
+                <p>
+                  Linkedin:
+                  https://www.linkedin.com/in/elizabeth-dieterich-067b55a8/
+                </p>
+              </div>
+            </div>
+            <a
+              href="mailto:dieterichelizabeth@gmail.com"
+              class="btn col-8 mb-4"
+              style="margin-left: 17%; background-color: #7289da; color: white"
+            >
+              Email Now
+            </a>
+          </div>
+        </div>
+      </div>
     </main>
     <footer>
       <span style="font-size: 17px">Liz Dieterich</span> 2022 <br />
-      Made with love, <i class="fa-brands fa-bootstrap"></i> Bootstrap, and
-      W3css
+      Made with love, Bootstrap, and W3css
     </footer>
     <script src="./Assets/js/script.js"></script>
     <script>
