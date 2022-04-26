@@ -11,6 +11,10 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css"
+    /> -->
   </head>
   <body>
     <header><h1>Liz Dieterich</h1></header>
@@ -27,10 +31,11 @@
 
     <!-- Featured Projects Section -->
     <section class="d-flex flex-wrap justify-content-center">
-      <h2 class="col-12 sectionHeader">Featured Projects</h2>
+      <h2 class="col-12 sectionHeader content">Featured Projects</h2>
 
       <!-- Featured Project 1 -->
-      <div class="col-5 d-flex flex-wrap justify-content-center">
+
+      <div class="col-5 d-flex flex-wrap justify-content-center content">
         <img src="./assets/images/zoolander.png" alt="" />
         <p class="col-12 text-center featuredTitle">Featured 1</p>
         <p class="col-10 text-center">
@@ -44,7 +49,7 @@
       </div>
 
       <!-- Featured Project 2 -->
-      <div class="col-5 d-flex flex-wrap justify-content-center">
+      <div class="col-5 d-flex flex-wrap justify-content-center content">
         <img src="./assets/images/zoolander.png" alt="" />
         <p class="col-12 text-center featuredTitle">Featured 2</p>
         <p class="col-10 text-center">
@@ -59,22 +64,24 @@
     </section>
 
     <!-- Word Break -->
-    <div class="d-flex flex-wrap justify-content-center">
-      <p class="col-12 text-center Mission">Make it Stand Out.</p>
-      <p class="col-6 text-center">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, obcaecati
-        pariatur! Eos voluptatem quos deleniti officiis amet tenetur doloremque
-        facilis quasi quas. Commodi explicabo vero consectetur suscipit officiis
-        animi quasi.
-      </p>
+    <div class="content">
+      <div class="d-flex flex-wrap justify-content-center">
+        <p class="col-12 text-center Mission">Make it Stand Out.</p>
+        <p class="col-6 text-center">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
+          obcaecati pariatur! Eos voluptatem quos deleniti officiis amet tenetur
+          doloremque facilis quasi quas. Commodi explicabo vero consectetur
+          suscipit officiis animi quasi.
+        </p>
+      </div>
     </div>
 
     <!-- Projects Section -->
     <section class="d-flex flex-wrap justify-content-center">
-      <h2 class="col-12 sectionHeader">Projects</h2>
+      <h2 class="col-12 sectionHeader content">Projects</h2>
 
       <!-- Projects 1 -->
-      <div class="col-3 d-flex flex-wrap">
+      <div class="col-3 d-flex flex-wrap content">
         <img src="./assets/images/zoolander.png" alt="" />
         <p class="projectTitle">Project 1</p>
         <p>
@@ -88,7 +95,7 @@
       </div>
 
       <!-- Projects 2 -->
-      <div class="col-3 d-flex flex-wrap">
+      <div class="col-3 d-flex flex-wrap content">
         <img src="./assets/images/zoolander.png" alt="" />
         <p class="projectTitle">Project 2</p>
         <p>
@@ -102,7 +109,7 @@
       </div>
 
       <!-- Projects 3 -->
-      <div class="col-3 d-flex flex-wrap">
+      <div class="col-3 d-flex flex-wrap content">
         <img src="./assets/images/zoolander.png" alt="" />
         <p class="projectTitle">Project 3</p>
         <p>
@@ -118,8 +125,16 @@
 
     <!-- Footer -->
     <footer>
-      <p>github and Linkedin</p>
-      <p>Made with love and Bootstrap</p>
+      <i class="bi bi-github"></i>
+      <i class="bi bi-linkedin"></i>
+
+      <p>
+        Made with love and
+        <i class="bi bi-bootstrap"></i>
+        Bootstrap
+      </p>
     </footer>
+
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>
