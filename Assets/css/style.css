@@ -44,6 +44,15 @@ section {
   opacity: 1;
 }
 
+.projectImage {
+  /* height: 350px; */
+  transition: all 0.2s ease-in-out;
+}
+
+.projectImage:hover {
+  transform: scale(1.05);
+}
+
 /* Begin styles to Header */
 header {
   text-align: center;
@@ -103,114 +112,6 @@ nav a {
   --tertiary-color: #0097a7;
 } */
 
-/* p {
-  font-size: 20px;
-  color: black;
-}
-
-h2 {
-  text-align: center;
-  font-size: 25px;
-  color: var(--primary-color);
-}
-
-h3 {
-  color: black;
-}
-
-.featured_project hr,
-#projects hr,
-.welcome hr,
-#contact-me hr,
-#about-me hr {
-  border-top: 1px solid #99aab5;
-  width: 50%;
-  margin-left: 25%;
-} */
-
-/* Begin styles to Welcome */
-/* .welcome {
-  margin-top: 50px;
-  margin-bottom: 50px;
-}
-
-.welcome h1 {
-  color: black;
-  font-family: "Roboto Mono", monospace;
-  font-size: 50px;
-}
-
-.welcome p {
-  color: black;
-}
-
-#profile_image {
-  width: 20%;
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.featured_project {
-  background-color: #f3f3f38d;
-  margin-bottom: 150px;
-  padding-top: 70px;
-} */
-
-/* Begin styles to Project Cards*/
-/* .project_head {
-  text-align: center;
-}
-
-.project_card {
-  color: white;
-  background-color: #99aab51c;
-  border: 1px solid #f3f3f38d;
-  margin-bottom: 20px;
-  padding: 10px;
-}
-
-.project_image {
-  width: 100%;
-}
-
-.project_icon {
-  margin-top: 15px;
-  margin-right: 15px;
-  transition: all 0.2s ease-in-out;
-}
-
-.project_icon:hover {
-  color: var(--tertiary-color);
-  transform: scale(1.1);
-}
-
-.project_description {
-  margin-top: 40px;
-} */
-
-/* .project_tools_container {
-  margin-top: 50px;
-}
-
-.project_tools {
-  font-size: 15px;
-} */
-
-/* Begin styles to About/contact */
-/* .about {
-  margin-bottom: 100px;
-}
-
-.about_h3 {
-  margin-top: 70px;
-}
-
-#contact-me {
-  background-color: #f3f3f38d;
-} */
-
 /* Begin styles to Footer */
 footer {
   background-color: black;
@@ -222,4 +123,15 @@ footer p {
   margin-bottom: 0px;
   margin-block-end: 0px;
   padding: 5px;
+}
+
+/* MEDIA QUERY FOR 991px */
+@media screen and (max-width: 991px) {
+  .content {
+    margin: 30px 0px 30px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
 }
