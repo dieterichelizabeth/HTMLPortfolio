@@ -52,6 +52,11 @@ nav a {
   font-weight: bolder;
 }
 
+/* Begin styles to About */
+.aboutHeader {
+  margin-bottom: 30px;
+}
+
 /* :root {
   --white-text: #cfcfcf;
   --white-bg-fill: rgba(250, 250, 250, 0.15);
