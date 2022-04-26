@@ -104,14 +104,6 @@ nav a {
   width: 35%;
 }
 
-/* :root {
-  --white-text: #cfcfcf;
-  --white-bg-fill: rgba(250, 250, 250, 0.15);
-  --primary-color: #7289da;
-  --secondary-color: #b1bbec;
-  --tertiary-color: #0097a7;
-} */
-
 /* Begin styles to Footer */
 footer {
   background-color: black;
@@ -134,4 +126,31 @@ footer p {
   .description {
     font-size: 12px;
   }
+  .formName,
+  .formEmail {
+    width: 55%;
+  }
 }
+
+/* MEDIA QUERY FOR 740px */
+@media screen and (max-width: 740px) {
+  .Mission {
+    font-size: 35px;
+    margin-bottom: 30px;
+  }
+  .missionDescription {
+    font-size: 12px;
+  }
+  .formName,
+  .formEmail {
+    width: 85%;
+  }
+}
+
+/* :root {
+  --white-text: #cfcfcf;
+  --white-bg-fill: rgba(250, 250, 250, 0.15);
+  --primary-color: #7289da;
+  --secondary-color: #b1bbec;
+  --tertiary-color: #0097a7;
+} */
