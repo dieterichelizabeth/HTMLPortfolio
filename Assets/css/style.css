@@ -54,10 +54,11 @@ section {
 }
 
 /* Begin styles to Header */
-header {
+header h1 {
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 50px;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-size: 20px;
 }
 
 /* Begin styles to Nav */
